@@ -57,6 +57,12 @@
   version = "v1.14.0"
 
 [[projects]]
+  name = "github.com/awslabs/goformation"
+  packages = ["cloudformation"]
+  revision = "1358de5008ca15a213cc432549977e09cd4d2beb"
+  source = "https://github.com/errordeveloper/goformation"
+
+[[projects]]
   branch = "master"
   name = "github.com/beorn7/perks"
   packages = ["quantile"]
@@ -398,6 +404,12 @@
     "xfs"
   ]
   revision = "fe93d378a6b03758a2c1b65e86cf630bf78681c0"
+
+[[projects]]
+  name = "github.com/sanathkr/yaml"
+  packages = ["."]
+  revision = "0ca9ea5df5451ffdf184b4428c902747c2c11cd7"
+  version = "v1.0.0"
 
 [[projects]]
   name = "github.com/sergi/go-diff"
@@ -796,6 +808,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "16ca9034d52c2f21248875e09631764b490e0ef9e07f8fc7dadc6e5019fb9b8b"
+  inputs-digest = "c6faec260ab3fb012def2949e889ee59c326027979c7527f8823ca5036f1b030"
   solver-name = "gps-cdcl"
   solver-version = 1

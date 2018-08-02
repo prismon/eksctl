@@ -76,3 +76,8 @@ required = [
 [[override]]
   name = "github.com/gophercloud/gophercloud"
   revision = "8183543f90d1aef267a5ecc209f2e0715b355acb"
+
+[[constraint]]
+   name = "github.com/awslabs/goformation"
+   source = "https://github.com/errordeveloper/goformation"
+   revision = "1358de5008ca15a213cc432549977e09cd4d2beb"
