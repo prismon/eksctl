@@ -22,7 +22,7 @@ install-goveralls:
 
 .PHONY: update-bindata
 update-bindata:
-	go generate ./pkg/eks
+	go generate ./pkg/nodebootstrap
 
 .PHONY: install-bindata
 install-bindata:
