@@ -9,7 +9,8 @@ build:
 	go build -ldflags "-X main.gitCommit=$(git_commit) -X main.builtAt=$(built_at)" ./cmd/eksctl
 
 .PHONY: test
-test:
+test: update-bindata
+	git diff --exit-code pkg/nodebootstrap/assets.go > /dev/null
 	go test -v -covermode=count -coverprofile=coverage.out ./pkg/... ./cmd/...
 
 .PHONY: coverage

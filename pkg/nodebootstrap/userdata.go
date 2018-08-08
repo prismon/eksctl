@@ -15,7 +15,7 @@ import (
 	"github.com/weaveworks/eksctl/pkg/eks/api"
 )
 
-//go:generate go-bindata -pkg $GOPACKAGE -prefix assets -o assets.go assets
+//go:generate go-bindata -pkg $GOPACKAGE -prefix assets -modtime 1 -o assets.go assets
 
 const (
 	configDir            = "/etc/eksctl/"
