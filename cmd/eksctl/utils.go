@@ -156,7 +156,7 @@ func doWriteKubeconfigCmd(cfg *api.ClusterConfig, name string) error {
 		return err
 	}
 
-	config := clientConfigBase.WithExecHeptioAuthenticator()
+	config := clientConfigBase.WithExecAuthenticator()
 	filename, err := kubeconfig.Write(utilsKubeconfigOutputPath, config.Client, utilsSetContext)
 	if err != nil {
 		return errors.Wrap(err, "writing kubeconfig")

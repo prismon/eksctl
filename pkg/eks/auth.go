@@ -8,6 +8,7 @@ import (
 
 	"github.com/pkg/errors"
 	"github.com/weaveworks/eksctl/pkg/eks/api"
+	"github.com/weaveworks/eksctl/pkg/utils/kubeconfig"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/ec2"
@@ -162,29 +163,10 @@ type ClientConfig struct {
 // based on "k8s.io/kubernetes/cmd/kubeadm/app/util/kubeconfig"
 // these are small, so we can copy these, and no need to deal with k/k as dependency
 func (c *ClusterProvider) NewClientConfig() (*ClientConfig, error) {
-	clusterName := fmt.Sprintf("%s.%s.eksctl.io", c.Spec.ClusterName, c.Spec.Region)
-	contextName := fmt.Sprintf("%s@%s", c.getUsername(), clusterName)
-
+	client, clusterName, contextName := kubeconfig.New(c.Spec, c.getUsername(), "")
 	clientConfig := &ClientConfig{
-		Cluster: c.Spec,
-		Client: &clientcmdapi.Config{
-			Clusters: map[string]*clientcmdapi.Cluster{
-				clusterName: {
-					Server: c.Spec.Endpoint,
-					CertificateAuthorityData: c.Spec.CertificateAuthorityData,
-				},
-			},
-			Contexts: map[string]*clientcmdapi.Context{
-				contextName: {
-					Cluster:  clusterName,
-					AuthInfo: contextName,
-				},
-			},
-			AuthInfos: map[string]*clientcmdapi.AuthInfo{
-				contextName: &clientcmdapi.AuthInfo{},
-			},
-			CurrentContext: contextName,
-		},
+		Cluster:     c.Spec,
+		Client:      client,
 		ClusterName: clusterName,
 		ContextName: contextName,
 		roleARN:     c.Status.iamRoleARN,
@@ -194,22 +176,20 @@ func (c *ClusterProvider) NewClientConfig() (*ClientConfig, error) {
 	return clientConfig, nil
 }
 
-func (c *ClientConfig) WithExecHeptioAuthenticator() *ClientConfig {
+// WithExecAuthenticator creates a copy of ClientConfig with authenticator exec plugin
+// it ensures that AWS_PROFILE environment variable gets added to config also
+func (c *ClientConfig) WithExecAuthenticator() *ClientConfig {
 	clientConfigCopy := *c
 
-	x := clientConfigCopy.Client.AuthInfos[c.ContextName]
-	x.Exec = &clientcmdapi.ExecConfig{
-		APIVersion: "client.authentication.k8s.io/v1alpha1",
-		Command:    "heptio-authenticator-aws",
-		Args:       []string{"token", "-i", c.Cluster.ClusterName},
-		/*
-			Args:       []string{"token", "-i", c.Cluster.ClusterName, "-r", c.roleARN},
-		*/
-	}
+	kubeconfig.AppendAuthenticator(clientConfigCopy.Client, c.Cluster, kubeconfig.HeptioAuthenticatorAWS)
 
 	if len(c.Cluster.Profile) > 0 {
-		profileVar := &clientcmdapi.ExecEnvVar{Name: "AWS_PROFILE", Value: c.Cluster.Profile}
-		x.Exec.Env = []clientcmdapi.ExecEnvVar{*profileVar}
+		clientConfigCopy.Client.AuthInfos[c.ContextName].Exec.Env = []clientcmdapi.ExecEnvVar{
+			clientcmdapi.ExecEnvVar{
+				Name:  "AWS_PROFILE",
+				Value: c.Cluster.Profile,
+			},
+		}
 	}
 
 	return &clientConfigCopy
