@@ -17,7 +17,7 @@ type AWSECSTaskDefinition_LinuxParameters struct {
 	// InitProcessEnabled AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-linuxparameters.html#cfn-ecs-taskdefinition-linuxparameters-initprocessenabled
-	InitProcessEnabled bool `json:"InitProcessEnabled,omitempty"`
+	InitProcessEnabled Value `json:"InitProcessEnabled,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

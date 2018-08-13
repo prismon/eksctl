@@ -13,17 +13,17 @@ type AWSLambdaVersion struct {
 	// CodeSha256 AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-codesha256
-	CodeSha256 *StringIntrinsic `json:"CodeSha256,omitempty"`
+	CodeSha256 Value `json:"CodeSha256,omitempty"`
 
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// FunctionName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-version.html#cfn-lambda-version-functionname
-	FunctionName *StringIntrinsic `json:"FunctionName,omitempty"`
+	FunctionName Value `json:"FunctionName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

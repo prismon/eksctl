@@ -13,7 +13,7 @@ type AWSGlueConnection struct {
 	// CatalogId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-connection.html#cfn-glue-connection-catalogid
-	CatalogId *StringIntrinsic `json:"CatalogId,omitempty"`
+	CatalogId Value `json:"CatalogId,omitempty"`
 
 	// ConnectionInput AWS CloudFormation Property
 	// Required: true

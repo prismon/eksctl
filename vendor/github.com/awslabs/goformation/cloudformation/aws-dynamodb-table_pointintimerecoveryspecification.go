@@ -7,7 +7,7 @@ type AWSDynamoDBTable_PointInTimeRecoverySpecification struct {
 	// PointInTimeRecoveryEnabled AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-table-pointintimerecoveryspecification.html#cfn-dynamodb-table-pointintimerecoveryspecification-pointintimerecoveryenabled
-	PointInTimeRecoveryEnabled bool `json:"PointInTimeRecoveryEnabled,omitempty"`
+	PointInTimeRecoveryEnabled Value `json:"PointInTimeRecoveryEnabled,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

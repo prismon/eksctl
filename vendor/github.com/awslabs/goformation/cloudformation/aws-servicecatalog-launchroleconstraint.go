@@ -13,27 +13,27 @@ type AWSServiceCatalogLaunchRoleConstraint struct {
 	// AcceptLanguage AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-acceptlanguage
-	AcceptLanguage *StringIntrinsic `json:"AcceptLanguage,omitempty"`
+	AcceptLanguage Value `json:"AcceptLanguage,omitempty"`
 
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// PortfolioId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-portfolioid
-	PortfolioId *StringIntrinsic `json:"PortfolioId,omitempty"`
+	PortfolioId Value `json:"PortfolioId,omitempty"`
 
 	// ProductId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-productid
-	ProductId *StringIntrinsic `json:"ProductId,omitempty"`
+	ProductId Value `json:"ProductId,omitempty"`
 
 	// RoleArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-launchroleconstraint.html#cfn-servicecatalog-launchroleconstraint-rolearn
-	RoleArn *StringIntrinsic `json:"RoleArn,omitempty"`
+	RoleArn Value `json:"RoleArn,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

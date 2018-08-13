@@ -7,27 +7,27 @@ type AWSECSTaskDefinition_HealthCheck struct {
 	// Command AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-command
-	Command []*StringIntrinsic `json:"Command,omitempty"`
+	Command []Value `json:"Command,omitempty"`
 
 	// Interval AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-interval
-	Interval int `json:"Interval,omitempty"`
+	Interval Value `json:"Interval,omitempty"`
 
 	// Retries AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-retries
-	Retries int `json:"Retries,omitempty"`
+	Retries Value `json:"Retries,omitempty"`
 
 	// StartPeriod AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-startperiod
-	StartPeriod int `json:"StartPeriod,omitempty"`
+	StartPeriod Value `json:"StartPeriod,omitempty"`
 
 	// Timeout AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-healthcheck.html#cfn-ecs-taskdefinition-healthcheck-timeout
-	Timeout int `json:"Timeout,omitempty"`
+	Timeout Value `json:"Timeout,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

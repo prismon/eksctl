@@ -7,12 +7,12 @@ type AWSElasticsearchDomain_EncryptionAtRestOptions struct {
 	// Enabled AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html#cfn-elasticsearch-domain-encryptionatrestoptions-enabled
-	Enabled bool `json:"Enabled,omitempty"`
+	Enabled Value `json:"Enabled,omitempty"`
 
 	// KmsKeyId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-encryptionatrestoptions.html#cfn-elasticsearch-domain-encryptionatrestoptions-kmskeyid
-	KmsKeyId *StringIntrinsic `json:"KmsKeyId,omitempty"`
+	KmsKeyId Value `json:"KmsKeyId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

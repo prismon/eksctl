@@ -7,17 +7,17 @@ type AWSConfigConfigurationRecorder_RecordingGroup struct {
 	// AllSupported AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-allsupported
-	AllSupported bool `json:"AllSupported,omitempty"`
+	AllSupported Value `json:"AllSupported,omitempty"`
 
 	// IncludeGlobalResourceTypes AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-includeglobalresourcetypes
-	IncludeGlobalResourceTypes bool `json:"IncludeGlobalResourceTypes,omitempty"`
+	IncludeGlobalResourceTypes Value `json:"IncludeGlobalResourceTypes,omitempty"`
 
 	// ResourceTypes AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-config-configurationrecorder-recordinggroup.html#cfn-config-configurationrecorder-recordinggroup-resourcetypes
-	ResourceTypes []*StringIntrinsic `json:"ResourceTypes,omitempty"`
+	ResourceTypes []Value `json:"ResourceTypes,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

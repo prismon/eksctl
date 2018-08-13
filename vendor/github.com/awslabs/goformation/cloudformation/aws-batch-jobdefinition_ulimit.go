@@ -7,17 +7,17 @@ type AWSBatchJobDefinition_Ulimit struct {
 	// HardLimit AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html#cfn-batch-jobdefinition-ulimit-hardlimit
-	HardLimit int `json:"HardLimit,omitempty"`
+	HardLimit Value `json:"HardLimit,omitempty"`
 
 	// Name AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html#cfn-batch-jobdefinition-ulimit-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// SoftLimit AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-ulimit.html#cfn-batch-jobdefinition-ulimit-softlimit
-	SoftLimit int `json:"SoftLimit,omitempty"`
+	SoftLimit Value `json:"SoftLimit,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

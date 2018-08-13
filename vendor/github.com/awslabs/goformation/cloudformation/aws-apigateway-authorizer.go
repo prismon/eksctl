@@ -13,52 +13,52 @@ type AWSApiGatewayAuthorizer struct {
 	// AuthType AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authtype
-	AuthType *StringIntrinsic `json:"AuthType,omitempty"`
+	AuthType Value `json:"AuthType,omitempty"`
 
 	// AuthorizerCredentials AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizercredentials
-	AuthorizerCredentials *StringIntrinsic `json:"AuthorizerCredentials,omitempty"`
+	AuthorizerCredentials Value `json:"AuthorizerCredentials,omitempty"`
 
 	// AuthorizerResultTtlInSeconds AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizerresultttlinseconds
-	AuthorizerResultTtlInSeconds int `json:"AuthorizerResultTtlInSeconds,omitempty"`
+	AuthorizerResultTtlInSeconds Value `json:"AuthorizerResultTtlInSeconds,omitempty"`
 
 	// AuthorizerUri AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-authorizeruri
-	AuthorizerUri *StringIntrinsic `json:"AuthorizerUri,omitempty"`
+	AuthorizerUri Value `json:"AuthorizerUri,omitempty"`
 
 	// IdentitySource AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identitysource
-	IdentitySource *StringIntrinsic `json:"IdentitySource,omitempty"`
+	IdentitySource Value `json:"IdentitySource,omitempty"`
 
 	// IdentityValidationExpression AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-identityvalidationexpression
-	IdentityValidationExpression *StringIntrinsic `json:"IdentityValidationExpression,omitempty"`
+	IdentityValidationExpression Value `json:"IdentityValidationExpression,omitempty"`
 
 	// Name AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// ProviderARNs AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-providerarns
-	ProviderARNs []*StringIntrinsic `json:"ProviderARNs,omitempty"`
+	ProviderARNs []Value `json:"ProviderARNs,omitempty"`
 
 	// RestApiId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-restapiid
-	RestApiId *StringIntrinsic `json:"RestApiId,omitempty"`
+	RestApiId Value `json:"RestApiId,omitempty"`
 
 	// Type AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-authorizer.html#cfn-apigateway-authorizer-type
-	Type *StringIntrinsic `json:"Type,omitempty"`
+	Type Value `json:"Type,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

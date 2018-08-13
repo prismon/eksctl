@@ -13,12 +13,12 @@ type AWSAppSyncDataSource struct {
 	// ApiId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-apiid
-	ApiId *StringIntrinsic `json:"ApiId,omitempty"`
+	ApiId Value `json:"ApiId,omitempty"`
 
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// DynamoDBConfig AWS CloudFormation Property
 	// Required: false
@@ -43,17 +43,17 @@ type AWSAppSyncDataSource struct {
 	// Name AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// ServiceRoleArn AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-servicerolearn
-	ServiceRoleArn *StringIntrinsic `json:"ServiceRoleArn,omitempty"`
+	ServiceRoleArn Value `json:"ServiceRoleArn,omitempty"`
 
 	// Type AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-datasource.html#cfn-appsync-datasource-type
-	Type *StringIntrinsic `json:"Type,omitempty"`
+	Type Value `json:"Type,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,7 +13,7 @@ type AWSWAFSqlInjectionMatchSet struct {
 	// Name AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-waf-sqlinjectionmatchset.html#cfn-waf-sqlinjectionmatchset-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// SqlInjectionMatchTuples AWS CloudFormation Property
 	// Required: false

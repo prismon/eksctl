@@ -13,12 +13,12 @@ type AWSServiceCatalogAcceptedPortfolioShare struct {
 	// AcceptLanguage AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-acceptlanguage
-	AcceptLanguage *StringIntrinsic `json:"AcceptLanguage,omitempty"`
+	AcceptLanguage Value `json:"AcceptLanguage,omitempty"`
 
 	// PortfolioId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-acceptedportfolioshare.html#cfn-servicecatalog-acceptedportfolioshare-portfolioid
-	PortfolioId *StringIntrinsic `json:"PortfolioId,omitempty"`
+	PortfolioId Value `json:"PortfolioId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -7,12 +7,12 @@ type AWSDynamoDBTable_AttributeDefinition struct {
 	// AttributeName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename
-	AttributeName *StringIntrinsic `json:"AttributeName,omitempty"`
+	AttributeName Value `json:"AttributeName,omitempty"`
 
 	// AttributeType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-attributedef.html#cfn-dynamodb-attributedef-attributename-attributetype
-	AttributeType *StringIntrinsic `json:"AttributeType,omitempty"`
+	AttributeType Value `json:"AttributeType,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

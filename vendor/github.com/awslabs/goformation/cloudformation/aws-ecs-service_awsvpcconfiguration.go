@@ -7,17 +7,17 @@ type AWSECSService_AwsVpcConfiguration struct {
 	// AssignPublicIp AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-assignpublicip
-	AssignPublicIp *StringIntrinsic `json:"AssignPublicIp,omitempty"`
+	AssignPublicIp Value `json:"AssignPublicIp,omitempty"`
 
 	// SecurityGroups AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-securitygroups
-	SecurityGroups []*StringIntrinsic `json:"SecurityGroups,omitempty"`
+	SecurityGroups []Value `json:"SecurityGroups,omitempty"`
 
 	// Subnets AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-service-awsvpcconfiguration.html#cfn-ecs-service-awsvpcconfiguration-subnets
-	Subnets []*StringIntrinsic `json:"Subnets,omitempty"`
+	Subnets []Value `json:"Subnets,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,7 +13,7 @@ type AWSBatchComputeEnvironment struct {
 	// ComputeEnvironmentName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-computeenvironmentname
-	ComputeEnvironmentName *StringIntrinsic `json:"ComputeEnvironmentName,omitempty"`
+	ComputeEnvironmentName Value `json:"ComputeEnvironmentName,omitempty"`
 
 	// ComputeResources AWS CloudFormation Property
 	// Required: false
@@ -23,17 +23,17 @@ type AWSBatchComputeEnvironment struct {
 	// ServiceRole AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-servicerole
-	ServiceRole *StringIntrinsic `json:"ServiceRole,omitempty"`
+	ServiceRole Value `json:"ServiceRole,omitempty"`
 
 	// State AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-state
-	State *StringIntrinsic `json:"State,omitempty"`
+	State Value `json:"State,omitempty"`
 
 	// Type AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-computeenvironment.html#cfn-batch-computeenvironment-type
-	Type *StringIntrinsic `json:"Type,omitempty"`
+	Type Value `json:"Type,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

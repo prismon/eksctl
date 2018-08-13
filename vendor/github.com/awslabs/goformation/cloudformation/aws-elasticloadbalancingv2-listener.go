@@ -23,22 +23,22 @@ type AWSElasticLoadBalancingV2Listener struct {
 	// LoadBalancerArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-loadbalancerarn
-	LoadBalancerArn *StringIntrinsic `json:"LoadBalancerArn,omitempty"`
+	LoadBalancerArn Value `json:"LoadBalancerArn,omitempty"`
 
 	// Port AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-port
-	Port int `json:"Port,omitempty"`
+	Port Value `json:"Port,omitempty"`
 
 	// Protocol AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-protocol
-	Protocol *StringIntrinsic `json:"Protocol,omitempty"`
+	Protocol Value `json:"Protocol,omitempty"`
 
 	// SslPolicy AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listener.html#cfn-elasticloadbalancingv2-listener-sslpolicy
-	SslPolicy *StringIntrinsic `json:"SslPolicy,omitempty"`
+	SslPolicy Value `json:"SslPolicy,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

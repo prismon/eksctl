@@ -13,12 +13,12 @@ type AWSEC2SubnetRouteTableAssociation struct {
 	// RouteTableId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-routetableid
-	RouteTableId *StringIntrinsic `json:"RouteTableId,omitempty"`
+	RouteTableId Value `json:"RouteTableId,omitempty"`
 
 	// SubnetId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-route-table-assoc.html#cfn-ec2-subnetroutetableassociation-subnetid
-	SubnetId *StringIntrinsic `json:"SubnetId,omitempty"`
+	SubnetId Value `json:"SubnetId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,27 +13,27 @@ type AWSEC2FlowLog struct {
 	// DeliverLogsPermissionArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-deliverlogspermissionarn
-	DeliverLogsPermissionArn *StringIntrinsic `json:"DeliverLogsPermissionArn,omitempty"`
+	DeliverLogsPermissionArn Value `json:"DeliverLogsPermissionArn,omitempty"`
 
 	// LogGroupName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-loggroupname
-	LogGroupName *StringIntrinsic `json:"LogGroupName,omitempty"`
+	LogGroupName Value `json:"LogGroupName,omitempty"`
 
 	// ResourceId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourceid
-	ResourceId *StringIntrinsic `json:"ResourceId,omitempty"`
+	ResourceId Value `json:"ResourceId,omitempty"`
 
 	// ResourceType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-resourcetype
-	ResourceType *StringIntrinsic `json:"ResourceType,omitempty"`
+	ResourceType Value `json:"ResourceType,omitempty"`
 
 	// TrafficType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-flowlog.html#cfn-ec2-flowlog-traffictype
-	TrafficType *StringIntrinsic `json:"TrafficType,omitempty"`
+	TrafficType Value `json:"TrafficType,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

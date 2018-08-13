@@ -13,17 +13,17 @@ type AWSCognitoUserPoolUserToGroupAttachment struct {
 	// GroupName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-groupname
-	GroupName *StringIntrinsic `json:"GroupName,omitempty"`
+	GroupName Value `json:"GroupName,omitempty"`
 
 	// UserPoolId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-userpoolid
-	UserPoolId *StringIntrinsic `json:"UserPoolId,omitempty"`
+	UserPoolId Value `json:"UserPoolId,omitempty"`
 
 	// Username AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cognito-userpoolusertogroupattachment.html#cfn-cognito-userpoolusertogroupattachment-username
-	Username *StringIntrinsic `json:"Username,omitempty"`
+	Username Value `json:"Username,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

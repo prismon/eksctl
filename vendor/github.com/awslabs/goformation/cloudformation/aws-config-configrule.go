@@ -13,12 +13,12 @@ type AWSConfigConfigRule struct {
 	// ConfigRuleName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-configrulename
-	ConfigRuleName *StringIntrinsic `json:"ConfigRuleName,omitempty"`
+	ConfigRuleName Value `json:"ConfigRuleName,omitempty"`
 
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// InputParameters AWS CloudFormation Property
 	// Required: false
@@ -28,7 +28,7 @@ type AWSConfigConfigRule struct {
 	// MaximumExecutionFrequency AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html#cfn-config-configrule-maximumexecutionfrequency
-	MaximumExecutionFrequency *StringIntrinsic `json:"MaximumExecutionFrequency,omitempty"`
+	MaximumExecutionFrequency Value `json:"MaximumExecutionFrequency,omitempty"`
 
 	// Scope AWS CloudFormation Property
 	// Required: false

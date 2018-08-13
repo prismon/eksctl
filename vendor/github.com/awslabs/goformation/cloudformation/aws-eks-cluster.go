@@ -13,7 +13,7 @@ type AWSEKSCluster struct {
 	// Name AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// ResourcesVpcConfig AWS CloudFormation Property
 	// Required: true
@@ -23,12 +23,12 @@ type AWSEKSCluster struct {
 	// RoleArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-rolearn
-	RoleArn *StringIntrinsic `json:"RoleArn,omitempty"`
+	RoleArn Value `json:"RoleArn,omitempty"`
 
 	// Version AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-eks-cluster.html#cfn-eks-cluster-version
-	Version *StringIntrinsic `json:"Version,omitempty"`
+	Version Value `json:"Version,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

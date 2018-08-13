@@ -7,17 +7,17 @@ type AWSOpsWorksApp_EnvironmentVariable struct {
 	// Key AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#cfn-opsworks-app-environment-key
-	Key *StringIntrinsic `json:"Key,omitempty"`
+	Key Value `json:"Key,omitempty"`
 
 	// Secure AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#cfn-opsworks-app-environment-secure
-	Secure bool `json:"Secure,omitempty"`
+	Secure Value `json:"Secure,omitempty"`
 
 	// Value AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-environment.html#value
-	Value *StringIntrinsic `json:"Value,omitempty"`
+	Value Value `json:"Value,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

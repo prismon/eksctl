@@ -13,7 +13,7 @@ type AWSAppSyncGraphQLApi struct {
 	// AuthenticationType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-authenticationtype
-	AuthenticationType *StringIntrinsic `json:"AuthenticationType,omitempty"`
+	AuthenticationType Value `json:"AuthenticationType,omitempty"`
 
 	// LogConfig AWS CloudFormation Property
 	// Required: false
@@ -23,7 +23,7 @@ type AWSAppSyncGraphQLApi struct {
 	// Name AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-graphqlapi.html#cfn-appsync-graphqlapi-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// OpenIDConnectConfig AWS CloudFormation Property
 	// Required: false

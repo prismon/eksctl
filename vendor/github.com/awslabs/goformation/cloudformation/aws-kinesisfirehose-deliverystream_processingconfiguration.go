@@ -7,7 +7,7 @@ type AWSKinesisFirehoseDeliveryStream_ProcessingConfiguration struct {
 	// Enabled AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisfirehose-deliverystream-processingconfiguration.html#cfn-kinesisfirehose-deliverystream-processingconfiguration-enabled
-	Enabled bool `json:"Enabled,omitempty"`
+	Enabled Value `json:"Enabled,omitempty"`
 
 	// Processors AWS CloudFormation Property
 	// Required: false

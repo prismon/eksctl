@@ -13,27 +13,27 @@ type AWSCloud9EnvironmentEC2 struct {
 	// AutomaticStopTimeMinutes AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-automaticstoptimeminutes
-	AutomaticStopTimeMinutes int `json:"AutomaticStopTimeMinutes,omitempty"`
+	AutomaticStopTimeMinutes Value `json:"AutomaticStopTimeMinutes,omitempty"`
 
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// InstanceType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-instancetype
-	InstanceType *StringIntrinsic `json:"InstanceType,omitempty"`
+	InstanceType Value `json:"InstanceType,omitempty"`
 
 	// Name AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// OwnerArn AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-ownerarn
-	OwnerArn *StringIntrinsic `json:"OwnerArn,omitempty"`
+	OwnerArn Value `json:"OwnerArn,omitempty"`
 
 	// Repositories AWS CloudFormation Property
 	// Required: false
@@ -43,7 +43,7 @@ type AWSCloud9EnvironmentEC2 struct {
 	// SubnetId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloud9-environmentec2.html#cfn-cloud9-environmentec2-subnetid
-	SubnetId *StringIntrinsic `json:"SubnetId,omitempty"`
+	SubnetId Value `json:"SubnetId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

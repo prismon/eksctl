@@ -17,17 +17,17 @@ type AWSEMRCluster_InstanceFleetConfig struct {
 	// Name AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// TargetOnDemandCapacity AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetondemandcapacity
-	TargetOnDemandCapacity int `json:"TargetOnDemandCapacity,omitempty"`
+	TargetOnDemandCapacity Value `json:"TargetOnDemandCapacity,omitempty"`
 
 	// TargetSpotCapacity AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-cluster-instancefleetconfig.html#cfn-elasticmapreduce-cluster-instancefleetconfig-targetspotcapacity
-	TargetSpotCapacity int `json:"TargetSpotCapacity,omitempty"`
+	TargetSpotCapacity Value `json:"TargetSpotCapacity,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

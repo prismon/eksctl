@@ -13,7 +13,7 @@ type AWSIAMUser struct {
 	// Groups AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-groups
-	Groups []*StringIntrinsic `json:"Groups,omitempty"`
+	Groups []Value `json:"Groups,omitempty"`
 
 	// LoginProfile AWS CloudFormation Property
 	// Required: false
@@ -23,12 +23,12 @@ type AWSIAMUser struct {
 	// ManagedPolicyArns AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-managepolicyarns
-	ManagedPolicyArns []*StringIntrinsic `json:"ManagedPolicyArns,omitempty"`
+	ManagedPolicyArns []Value `json:"ManagedPolicyArns,omitempty"`
 
 	// Path AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-path
-	Path *StringIntrinsic `json:"Path,omitempty"`
+	Path Value `json:"Path,omitempty"`
 
 	// Policies AWS CloudFormation Property
 	// Required: false
@@ -38,7 +38,7 @@ type AWSIAMUser struct {
 	// UserName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-user.html#cfn-iam-user-username
-	UserName *StringIntrinsic `json:"UserName,omitempty"`
+	UserName Value `json:"UserName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

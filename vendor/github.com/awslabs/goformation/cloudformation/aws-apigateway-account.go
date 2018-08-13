@@ -13,7 +13,7 @@ type AWSApiGatewayAccount struct {
 	// CloudWatchRoleArn AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-account.html#cfn-apigateway-account-cloudwatchrolearn
-	CloudWatchRoleArn *StringIntrinsic `json:"CloudWatchRoleArn,omitempty"`
+	CloudWatchRoleArn Value `json:"CloudWatchRoleArn,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,17 +13,17 @@ type AWSCloudFormationWaitCondition struct {
 	// Count AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-count
-	Count int `json:"Count,omitempty"`
+	Count Value `json:"Count,omitempty"`
 
 	// Handle AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-handle
-	Handle *StringIntrinsic `json:"Handle,omitempty"`
+	Handle Value `json:"Handle,omitempty"`
 
 	// Timeout AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html#cfn-waitcondition-timeout
-	Timeout *StringIntrinsic `json:"Timeout,omitempty"`
+	Timeout Value `json:"Timeout,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

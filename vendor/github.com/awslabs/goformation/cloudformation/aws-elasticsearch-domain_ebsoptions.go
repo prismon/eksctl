@@ -7,22 +7,22 @@ type AWSElasticsearchDomain_EBSOptions struct {
 	// EBSEnabled AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-ebsenabled
-	EBSEnabled bool `json:"EBSEnabled,omitempty"`
+	EBSEnabled Value `json:"EBSEnabled,omitempty"`
 
 	// Iops AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-iops
-	Iops int `json:"Iops,omitempty"`
+	Iops Value `json:"Iops,omitempty"`
 
 	// VolumeSize AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumesize
-	VolumeSize int `json:"VolumeSize,omitempty"`
+	VolumeSize Value `json:"VolumeSize,omitempty"`
 
 	// VolumeType AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticsearch-domain-ebsoptions.html#cfn-elasticsearch-domain-ebsoptions-volumetype
-	VolumeType *StringIntrinsic `json:"VolumeType,omitempty"`
+	VolumeType Value `json:"VolumeType,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

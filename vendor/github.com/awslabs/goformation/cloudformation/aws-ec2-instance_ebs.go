@@ -7,32 +7,32 @@ type AWSEC2Instance_Ebs struct {
 	// DeleteOnTermination AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-deleteontermination
-	DeleteOnTermination bool `json:"DeleteOnTermination,omitempty"`
+	DeleteOnTermination Value `json:"DeleteOnTermination,omitempty"`
 
 	// Encrypted AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-encrypted
-	Encrypted bool `json:"Encrypted,omitempty"`
+	Encrypted Value `json:"Encrypted,omitempty"`
 
 	// Iops AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-iops
-	Iops int `json:"Iops,omitempty"`
+	Iops Value `json:"Iops,omitempty"`
 
 	// SnapshotId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-snapshotid
-	SnapshotId *StringIntrinsic `json:"SnapshotId,omitempty"`
+	SnapshotId Value `json:"SnapshotId,omitempty"`
 
 	// VolumeSize AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumesize
-	VolumeSize int `json:"VolumeSize,omitempty"`
+	VolumeSize Value `json:"VolumeSize,omitempty"`
 
 	// VolumeType AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-blockdev-template.html#cfn-ec2-blockdev-template-volumetype
-	VolumeType *StringIntrinsic `json:"VolumeType,omitempty"`
+	VolumeType Value `json:"VolumeType,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -12,12 +12,12 @@ type AWSWAFWebACL_ActivatedRule struct {
 	// Priority AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-priority
-	Priority int `json:"Priority,omitempty"`
+	Priority Value `json:"Priority,omitempty"`
 
 	// RuleId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waf-webacl-rules.html#cfn-waf-webacl-rules-ruleid
-	RuleId *StringIntrinsic `json:"RuleId,omitempty"`
+	RuleId Value `json:"RuleId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

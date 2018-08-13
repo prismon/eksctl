@@ -12,7 +12,7 @@ type AWSEMRInstanceFleetConfig_EbsConfiguration struct {
 	// EbsOptimized AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-ebsconfiguration.html#cfn-elasticmapreduce-instancefleetconfig-ebsconfiguration-ebsoptimized
-	EbsOptimized bool `json:"EbsOptimized,omitempty"`
+	EbsOptimized Value `json:"EbsOptimized,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

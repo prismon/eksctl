@@ -18,7 +18,7 @@ type AWSBatchJobDefinition struct {
 	// JobDefinitionName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-jobdefinitionname
-	JobDefinitionName *StringIntrinsic `json:"JobDefinitionName,omitempty"`
+	JobDefinitionName Value `json:"JobDefinitionName,omitempty"`
 
 	// Parameters AWS CloudFormation Property
 	// Required: false
@@ -38,7 +38,7 @@ type AWSBatchJobDefinition struct {
 	// Type AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-batch-jobdefinition.html#cfn-batch-jobdefinition-type
-	Type *StringIntrinsic `json:"Type,omitempty"`
+	Type Value `json:"Type,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

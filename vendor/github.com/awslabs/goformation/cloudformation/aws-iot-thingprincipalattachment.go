@@ -13,12 +13,12 @@ type AWSIoTThingPrincipalAttachment struct {
 	// Principal AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-principal
-	Principal *StringIntrinsic `json:"Principal,omitempty"`
+	Principal Value `json:"Principal,omitempty"`
 
 	// ThingName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-thingprincipalattachment.html#cfn-iot-thingprincipalattachment-thingname
-	ThingName *StringIntrinsic `json:"ThingName,omitempty"`
+	ThingName Value `json:"ThingName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -18,7 +18,7 @@ type AWSSSMDocument struct {
 	// DocumentType AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ssm-document.html#cfn-ssm-document-documenttype
-	DocumentType *StringIntrinsic `json:"DocumentType,omitempty"`
+	DocumentType Value `json:"DocumentType,omitempty"`
 
 	// Tags AWS CloudFormation Property
 	// Required: false

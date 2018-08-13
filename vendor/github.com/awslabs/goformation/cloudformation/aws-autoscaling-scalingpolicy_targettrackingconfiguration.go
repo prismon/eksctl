@@ -12,7 +12,7 @@ type AWSAutoScalingScalingPolicy_TargetTrackingConfiguration struct {
 	// DisableScaleIn AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-disablescalein
-	DisableScaleIn bool `json:"DisableScaleIn,omitempty"`
+	DisableScaleIn Value `json:"DisableScaleIn,omitempty"`
 
 	// PredefinedMetricSpecification AWS CloudFormation Property
 	// Required: false
@@ -22,7 +22,7 @@ type AWSAutoScalingScalingPolicy_TargetTrackingConfiguration struct {
 	// TargetValue AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-autoscaling-scalingpolicy-targettrackingconfiguration.html#cfn-autoscaling-scalingpolicy-targettrackingconfiguration-targetvalue
-	TargetValue float64 `json:"TargetValue,omitempty"`
+	TargetValue Value `json:"TargetValue,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

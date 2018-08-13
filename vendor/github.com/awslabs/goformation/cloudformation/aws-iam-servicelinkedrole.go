@@ -13,17 +13,17 @@ type AWSIAMServiceLinkedRole struct {
 	// AWSServiceName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-awsservicename
-	AWSServiceName *StringIntrinsic `json:"AWSServiceName,omitempty"`
+	AWSServiceName Value `json:"AWSServiceName,omitempty"`
 
 	// CustomSuffix AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-customsuffix
-	CustomSuffix *StringIntrinsic `json:"CustomSuffix,omitempty"`
+	CustomSuffix Value `json:"CustomSuffix,omitempty"`
 
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-servicelinkedrole.html#cfn-iam-servicelinkedrole-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

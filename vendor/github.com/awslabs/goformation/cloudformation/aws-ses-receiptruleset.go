@@ -13,7 +13,7 @@ type AWSSESReceiptRuleSet struct {
 	// RuleSetName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-receiptruleset.html#cfn-ses-receiptruleset-rulesetname
-	RuleSetName *StringIntrinsic `json:"RuleSetName,omitempty"`
+	RuleSetName Value `json:"RuleSetName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

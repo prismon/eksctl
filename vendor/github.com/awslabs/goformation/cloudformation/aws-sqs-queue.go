@@ -13,47 +13,47 @@ type AWSSQSQueue struct {
 	// ContentBasedDeduplication AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-contentbaseddeduplication
-	ContentBasedDeduplication bool `json:"ContentBasedDeduplication,omitempty"`
+	ContentBasedDeduplication Value `json:"ContentBasedDeduplication,omitempty"`
 
 	// DelaySeconds AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-delayseconds
-	DelaySeconds int `json:"DelaySeconds,omitempty"`
+	DelaySeconds Value `json:"DelaySeconds,omitempty"`
 
 	// FifoQueue AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-fifoqueue
-	FifoQueue bool `json:"FifoQueue,omitempty"`
+	FifoQueue Value `json:"FifoQueue,omitempty"`
 
 	// KmsDataKeyReusePeriodSeconds AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsdatakeyreuseperiodseconds
-	KmsDataKeyReusePeriodSeconds int `json:"KmsDataKeyReusePeriodSeconds,omitempty"`
+	KmsDataKeyReusePeriodSeconds Value `json:"KmsDataKeyReusePeriodSeconds,omitempty"`
 
 	// KmsMasterKeyId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-kmsmasterkeyid
-	KmsMasterKeyId *StringIntrinsic `json:"KmsMasterKeyId,omitempty"`
+	KmsMasterKeyId Value `json:"KmsMasterKeyId,omitempty"`
 
 	// MaximumMessageSize AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-maxmesgsize
-	MaximumMessageSize int `json:"MaximumMessageSize,omitempty"`
+	MaximumMessageSize Value `json:"MaximumMessageSize,omitempty"`
 
 	// MessageRetentionPeriod AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-msgretentionperiod
-	MessageRetentionPeriod int `json:"MessageRetentionPeriod,omitempty"`
+	MessageRetentionPeriod Value `json:"MessageRetentionPeriod,omitempty"`
 
 	// QueueName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-name
-	QueueName *StringIntrinsic `json:"QueueName,omitempty"`
+	QueueName Value `json:"QueueName,omitempty"`
 
 	// ReceiveMessageWaitTimeSeconds AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-receivemsgwaittime
-	ReceiveMessageWaitTimeSeconds int `json:"ReceiveMessageWaitTimeSeconds,omitempty"`
+	ReceiveMessageWaitTimeSeconds Value `json:"ReceiveMessageWaitTimeSeconds,omitempty"`
 
 	// RedrivePolicy AWS CloudFormation Property
 	// Required: false
@@ -63,7 +63,7 @@ type AWSSQSQueue struct {
 	// VisibilityTimeout AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html#aws-sqs-queue-visiblitytimeout
-	VisibilityTimeout int `json:"VisibilityTimeout,omitempty"`
+	VisibilityTimeout Value `json:"VisibilityTimeout,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

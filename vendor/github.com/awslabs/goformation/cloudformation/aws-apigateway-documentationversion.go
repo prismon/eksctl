@@ -13,17 +13,17 @@ type AWSApiGatewayDocumentationVersion struct {
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// DocumentationVersion AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-documentationversion
-	DocumentationVersion *StringIntrinsic `json:"DocumentationVersion,omitempty"`
+	DocumentationVersion Value `json:"DocumentationVersion,omitempty"`
 
 	// RestApiId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationversion.html#cfn-apigateway-documentationversion-restapiid
-	RestApiId *StringIntrinsic `json:"RestApiId,omitempty"`
+	RestApiId Value `json:"RestApiId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

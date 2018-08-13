@@ -13,12 +13,12 @@ type AWSEC2NatGateway struct {
 	// AllocationId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html#cfn-ec2-natgateway-allocationid
-	AllocationId *StringIntrinsic `json:"AllocationId,omitempty"`
+	AllocationId Value `json:"AllocationId,omitempty"`
 
 	// SubnetId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-natgateway.html#cfn-ec2-natgateway-subnetid
-	SubnetId *StringIntrinsic `json:"SubnetId,omitempty"`
+	SubnetId Value `json:"SubnetId,omitempty"`
 
 	// Tags AWS CloudFormation Property
 	// Required: false

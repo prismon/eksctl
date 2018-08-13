@@ -13,17 +13,17 @@ type AWSAppSyncApiKey struct {
 	// ApiId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-apiid
-	ApiId *StringIntrinsic `json:"ApiId,omitempty"`
+	ApiId Value `json:"ApiId,omitempty"`
 
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// Expires AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-appsync-apikey.html#cfn-appsync-apikey-expires
-	Expires float64 `json:"Expires,omitempty"`
+	Expires Value `json:"Expires,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

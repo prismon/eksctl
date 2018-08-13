@@ -13,7 +13,7 @@ type AWSSESConfigurationSetEventDestination struct {
 	// ConfigurationSetName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ses-configurationseteventdestination.html#cfn-ses-configurationseteventdestination-configurationsetname
-	ConfigurationSetName *StringIntrinsic `json:"ConfigurationSetName,omitempty"`
+	ConfigurationSetName Value `json:"ConfigurationSetName,omitempty"`
 
 	// EventDestination AWS CloudFormation Property
 	// Required: true

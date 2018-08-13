@@ -18,7 +18,7 @@ type AWSElasticLoadBalancingV2ListenerCertificate struct {
 	// ListenerArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenercertificate.html#cfn-elasticloadbalancingv2-listenercertificate-listenerarn
-	ListenerArn *StringIntrinsic `json:"ListenerArn,omitempty"`
+	ListenerArn Value `json:"ListenerArn,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -7,17 +7,17 @@ type AWSEMRInstanceFleetConfig_SpotProvisioningSpecification struct {
 	// BlockDurationMinutes AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html#cfn-elasticmapreduce-instancefleetconfig-spotprovisioningspecification-blockdurationminutes
-	BlockDurationMinutes int `json:"BlockDurationMinutes,omitempty"`
+	BlockDurationMinutes Value `json:"BlockDurationMinutes,omitempty"`
 
 	// TimeoutAction AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html#cfn-elasticmapreduce-instancefleetconfig-spotprovisioningspecification-timeoutaction
-	TimeoutAction *StringIntrinsic `json:"TimeoutAction,omitempty"`
+	TimeoutAction Value `json:"TimeoutAction,omitempty"`
 
 	// TimeoutDurationMinutes AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-spotprovisioningspecification.html#cfn-elasticmapreduce-instancefleetconfig-spotprovisioningspecification-timeoutdurationminutes
-	TimeoutDurationMinutes int `json:"TimeoutDurationMinutes,omitempty"`
+	TimeoutDurationMinutes Value `json:"TimeoutDurationMinutes,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,22 +13,22 @@ type AWSEC2VPCEndpointConnectionNotification struct {
 	// ConnectionEvents AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionevents
-	ConnectionEvents []*StringIntrinsic `json:"ConnectionEvents,omitempty"`
+	ConnectionEvents []Value `json:"ConnectionEvents,omitempty"`
 
 	// ConnectionNotificationArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-connectionnotificationarn
-	ConnectionNotificationArn *StringIntrinsic `json:"ConnectionNotificationArn,omitempty"`
+	ConnectionNotificationArn Value `json:"ConnectionNotificationArn,omitempty"`
 
 	// ServiceId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-serviceid
-	ServiceId *StringIntrinsic `json:"ServiceId,omitempty"`
+	ServiceId Value `json:"ServiceId,omitempty"`
 
 	// VPCEndpointId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpointconnectionnotification.html#cfn-ec2-vpcendpointconnectionnotification-vpcendpointid
-	VPCEndpointId *StringIntrinsic `json:"VPCEndpointId,omitempty"`
+	VPCEndpointId Value `json:"VPCEndpointId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

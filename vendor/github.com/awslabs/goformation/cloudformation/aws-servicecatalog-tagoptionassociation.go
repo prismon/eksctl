@@ -13,12 +13,12 @@ type AWSServiceCatalogTagOptionAssociation struct {
 	// ResourceId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-resourceid
-	ResourceId *StringIntrinsic `json:"ResourceId,omitempty"`
+	ResourceId Value `json:"ResourceId,omitempty"`
 
 	// TagOptionId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoptionassociation.html#cfn-servicecatalog-tagoptionassociation-tagoptionid
-	TagOptionId *StringIntrinsic `json:"TagOptionId,omitempty"`
+	TagOptionId Value `json:"TagOptionId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

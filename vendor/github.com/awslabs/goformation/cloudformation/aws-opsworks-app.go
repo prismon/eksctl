@@ -18,7 +18,7 @@ type AWSOpsWorksApp struct {
 	// Attributes AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-attributes
-	Attributes map[string]*StringIntrinsic `json:"Attributes,omitempty"`
+	Attributes map[string]Value `json:"Attributes,omitempty"`
 
 	// DataSources AWS CloudFormation Property
 	// Required: false
@@ -28,17 +28,17 @@ type AWSOpsWorksApp struct {
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// Domains AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-domains
-	Domains []*StringIntrinsic `json:"Domains,omitempty"`
+	Domains []Value `json:"Domains,omitempty"`
 
 	// EnableSsl AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-enablessl
-	EnableSsl bool `json:"EnableSsl,omitempty"`
+	EnableSsl Value `json:"EnableSsl,omitempty"`
 
 	// Environment AWS CloudFormation Property
 	// Required: false
@@ -48,12 +48,12 @@ type AWSOpsWorksApp struct {
 	// Name AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// Shortname AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-shortname
-	Shortname *StringIntrinsic `json:"Shortname,omitempty"`
+	Shortname Value `json:"Shortname,omitempty"`
 
 	// SslConfiguration AWS CloudFormation Property
 	// Required: false
@@ -63,12 +63,12 @@ type AWSOpsWorksApp struct {
 	// StackId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-stackid
-	StackId *StringIntrinsic `json:"StackId,omitempty"`
+	StackId Value `json:"StackId,omitempty"`
 
 	// Type AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-app.html#cfn-opsworks-app-type
-	Type *StringIntrinsic `json:"Type,omitempty"`
+	Type Value `json:"Type,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

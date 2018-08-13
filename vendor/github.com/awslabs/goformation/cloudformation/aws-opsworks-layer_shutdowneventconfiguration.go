@@ -7,12 +7,12 @@ type AWSOpsWorksLayer_ShutdownEventConfiguration struct {
 	// DelayUntilElbConnectionsDrained AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-delayuntilelbconnectionsdrained
-	DelayUntilElbConnectionsDrained bool `json:"DelayUntilElbConnectionsDrained,omitempty"`
+	DelayUntilElbConnectionsDrained Value `json:"DelayUntilElbConnectionsDrained,omitempty"`
 
 	// ExecutionTimeout AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-layer-lifecycleeventconfiguration-shutdowneventconfiguration.html#cfn-opsworks-layer-lifecycleconfiguration-shutdowneventconfiguration-executiontimeout
-	ExecutionTimeout int `json:"ExecutionTimeout,omitempty"`
+	ExecutionTimeout Value `json:"ExecutionTimeout,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

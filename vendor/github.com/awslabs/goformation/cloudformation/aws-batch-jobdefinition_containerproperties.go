@@ -7,7 +7,7 @@ type AWSBatchJobDefinition_ContainerProperties struct {
 	// Command AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-command
-	Command []*StringIntrinsic `json:"Command,omitempty"`
+	Command []Value `json:"Command,omitempty"`
 
 	// Environment AWS CloudFormation Property
 	// Required: false
@@ -17,17 +17,17 @@ type AWSBatchJobDefinition_ContainerProperties struct {
 	// Image AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-image
-	Image *StringIntrinsic `json:"Image,omitempty"`
+	Image Value `json:"Image,omitempty"`
 
 	// JobRoleArn AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-jobrolearn
-	JobRoleArn *StringIntrinsic `json:"JobRoleArn,omitempty"`
+	JobRoleArn Value `json:"JobRoleArn,omitempty"`
 
 	// Memory AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-memory
-	Memory int `json:"Memory,omitempty"`
+	Memory Value `json:"Memory,omitempty"`
 
 	// MountPoints AWS CloudFormation Property
 	// Required: false
@@ -37,12 +37,12 @@ type AWSBatchJobDefinition_ContainerProperties struct {
 	// Privileged AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-privileged
-	Privileged bool `json:"Privileged,omitempty"`
+	Privileged Value `json:"Privileged,omitempty"`
 
 	// ReadonlyRootFilesystem AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-readonlyrootfilesystem
-	ReadonlyRootFilesystem bool `json:"ReadonlyRootFilesystem,omitempty"`
+	ReadonlyRootFilesystem Value `json:"ReadonlyRootFilesystem,omitempty"`
 
 	// Ulimits AWS CloudFormation Property
 	// Required: false
@@ -52,12 +52,12 @@ type AWSBatchJobDefinition_ContainerProperties struct {
 	// User AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-user
-	User *StringIntrinsic `json:"User,omitempty"`
+	User Value `json:"User,omitempty"`
 
 	// Vcpus AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-batch-jobdefinition-containerproperties.html#cfn-batch-jobdefinition-containerproperties-vcpus
-	Vcpus int `json:"Vcpus,omitempty"`
+	Vcpus Value `json:"Vcpus,omitempty"`
 
 	// Volumes AWS CloudFormation Property
 	// Required: false

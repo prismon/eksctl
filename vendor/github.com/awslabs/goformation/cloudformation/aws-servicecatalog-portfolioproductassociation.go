@@ -13,22 +13,22 @@ type AWSServiceCatalogPortfolioProductAssociation struct {
 	// AcceptLanguage AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-acceptlanguage
-	AcceptLanguage *StringIntrinsic `json:"AcceptLanguage,omitempty"`
+	AcceptLanguage Value `json:"AcceptLanguage,omitempty"`
 
 	// PortfolioId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-portfolioid
-	PortfolioId *StringIntrinsic `json:"PortfolioId,omitempty"`
+	PortfolioId Value `json:"PortfolioId,omitempty"`
 
 	// ProductId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-productid
-	ProductId *StringIntrinsic `json:"ProductId,omitempty"`
+	ProductId Value `json:"ProductId,omitempty"`
 
 	// SourcePortfolioId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-portfolioproductassociation.html#cfn-servicecatalog-portfolioproductassociation-sourceportfolioid
-	SourcePortfolioId *StringIntrinsic `json:"SourcePortfolioId,omitempty"`
+	SourcePortfolioId Value `json:"SourcePortfolioId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

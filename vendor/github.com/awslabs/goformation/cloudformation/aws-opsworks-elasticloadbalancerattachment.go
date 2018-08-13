@@ -13,12 +13,12 @@ type AWSOpsWorksElasticLoadBalancerAttachment struct {
 	// ElasticLoadBalancerName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-elbname
-	ElasticLoadBalancerName *StringIntrinsic `json:"ElasticLoadBalancerName,omitempty"`
+	ElasticLoadBalancerName Value `json:"ElasticLoadBalancerName,omitempty"`
 
 	// LayerId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-elbattachment.html#cfn-opsworks-elbattachment-layerid
-	LayerId *StringIntrinsic `json:"LayerId,omitempty"`
+	LayerId Value `json:"LayerId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

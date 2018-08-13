@@ -13,7 +13,7 @@ type AWSGuardDutyDetector struct {
 	// Enable AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html#cfn-guardduty-detector-enable
-	Enable bool `json:"Enable,omitempty"`
+	Enable Value `json:"Enable,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

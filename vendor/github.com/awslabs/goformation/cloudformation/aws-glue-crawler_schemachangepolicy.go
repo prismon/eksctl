@@ -7,12 +7,12 @@ type AWSGlueCrawler_SchemaChangePolicy struct {
 	// DeleteBehavior AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-deletebehavior
-	DeleteBehavior *StringIntrinsic `json:"DeleteBehavior,omitempty"`
+	DeleteBehavior Value `json:"DeleteBehavior,omitempty"`
 
 	// UpdateBehavior AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-glue-crawler-schemachangepolicy.html#cfn-glue-crawler-schemachangepolicy-updatebehavior
-	UpdateBehavior *StringIntrinsic `json:"UpdateBehavior,omitempty"`
+	UpdateBehavior Value `json:"UpdateBehavior,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

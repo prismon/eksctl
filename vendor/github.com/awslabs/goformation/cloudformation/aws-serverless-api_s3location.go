@@ -7,17 +7,17 @@ type AWSServerlessApi_S3Location struct {
 	// Bucket AWS CloudFormation Property
 	// Required: true
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
-	Bucket *StringIntrinsic `json:"Bucket,omitempty"`
+	Bucket Value `json:"Bucket,omitempty"`
 
 	// Key AWS CloudFormation Property
 	// Required: true
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
-	Key *StringIntrinsic `json:"Key,omitempty"`
+	Key Value `json:"Key,omitempty"`
 
 	// Version AWS CloudFormation Property
 	// Required: true
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
-	Version int `json:"Version,omitempty"`
+	Version Value `json:"Version,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

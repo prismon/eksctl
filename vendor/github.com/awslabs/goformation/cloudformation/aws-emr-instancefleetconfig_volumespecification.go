@@ -7,17 +7,17 @@ type AWSEMRInstanceFleetConfig_VolumeSpecification struct {
 	// Iops AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-iops
-	Iops int `json:"Iops,omitempty"`
+	Iops Value `json:"Iops,omitempty"`
 
 	// SizeInGB AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-sizeingb
-	SizeInGB int `json:"SizeInGB,omitempty"`
+	SizeInGB Value `json:"SizeInGB,omitempty"`
 
 	// VolumeType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancefleetconfig-volumespecification.html#cfn-elasticmapreduce-instancefleetconfig-volumespecification-volumetype
-	VolumeType *StringIntrinsic `json:"VolumeType,omitempty"`
+	VolumeType Value `json:"VolumeType,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

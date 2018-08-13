@@ -12,12 +12,12 @@ type AWSCodeDeployDeploymentGroup_AlarmConfiguration struct {
 	// Enabled AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-enabled
-	Enabled bool `json:"Enabled,omitempty"`
+	Enabled Value `json:"Enabled,omitempty"`
 
 	// IgnorePollAlarmFailure AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-alarmconfiguration.html#cfn-codedeploy-deploymentgroup-alarmconfiguration-ignorepollalarmfailure
-	IgnorePollAlarmFailure bool `json:"IgnorePollAlarmFailure,omitempty"`
+	IgnorePollAlarmFailure Value `json:"IgnorePollAlarmFailure,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

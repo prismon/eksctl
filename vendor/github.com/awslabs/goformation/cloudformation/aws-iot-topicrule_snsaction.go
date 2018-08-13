@@ -7,17 +7,17 @@ type AWSIoTTopicRule_SnsAction struct {
 	// MessageFormat AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-messageformat
-	MessageFormat *StringIntrinsic `json:"MessageFormat,omitempty"`
+	MessageFormat Value `json:"MessageFormat,omitempty"`
 
 	// RoleArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-rolearn
-	RoleArn *StringIntrinsic `json:"RoleArn,omitempty"`
+	RoleArn Value `json:"RoleArn,omitempty"`
 
 	// TargetArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-topicrule-snsaction.html#cfn-iot-topicrule-snsaction-targetarn
-	TargetArn *StringIntrinsic `json:"TargetArn,omitempty"`
+	TargetArn Value `json:"TargetArn,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

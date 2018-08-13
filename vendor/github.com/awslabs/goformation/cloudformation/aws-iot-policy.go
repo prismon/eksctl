@@ -18,7 +18,7 @@ type AWSIoTPolicy struct {
 	// PolicyName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iot-policy.html#cfn-iot-policy-policyname
-	PolicyName *StringIntrinsic `json:"PolicyName,omitempty"`
+	PolicyName Value `json:"PolicyName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

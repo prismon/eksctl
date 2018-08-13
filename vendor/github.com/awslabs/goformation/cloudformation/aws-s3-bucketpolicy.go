@@ -13,7 +13,7 @@ type AWSS3BucketPolicy struct {
 	// Bucket AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-policy.html#aws-properties-s3-policy-bucket
-	Bucket *StringIntrinsic `json:"Bucket,omitempty"`
+	Bucket Value `json:"Bucket,omitempty"`
 
 	// PolicyDocument AWS CloudFormation Property
 	// Required: true

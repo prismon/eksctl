@@ -7,12 +7,12 @@ type AWSEMRInstanceGroupConfig_ScalingConstraints struct {
 	// MaxCapacity AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingconstraints.html#cfn-elasticmapreduce-instancegroupconfig-scalingconstraints-maxcapacity
-	MaxCapacity int `json:"MaxCapacity,omitempty"`
+	MaxCapacity Value `json:"MaxCapacity,omitempty"`
 
 	// MinCapacity AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticmapreduce-instancegroupconfig-scalingconstraints.html#cfn-elasticmapreduce-instancegroupconfig-scalingconstraints-mincapacity
-	MinCapacity int `json:"MinCapacity,omitempty"`
+	MinCapacity Value `json:"MinCapacity,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

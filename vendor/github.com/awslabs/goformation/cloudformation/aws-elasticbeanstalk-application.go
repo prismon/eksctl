@@ -13,12 +13,12 @@ type AWSElasticBeanstalkApplication struct {
 	// ApplicationName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-name
-	ApplicationName *StringIntrinsic `json:"ApplicationName,omitempty"`
+	ApplicationName Value `json:"ApplicationName,omitempty"`
 
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk.html#cfn-elasticbeanstalk-application-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// ResourceLifecycleConfig AWS CloudFormation Property
 	// Required: false

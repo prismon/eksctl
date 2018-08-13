@@ -7,17 +7,17 @@ type AWSEMRInstanceGroupConfig_VolumeSpecification struct {
 	// Iops AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification-iops
-	Iops int `json:"Iops,omitempty"`
+	Iops Value `json:"Iops,omitempty"`
 
 	// SizeInGB AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification-sizeingb
-	SizeInGB int `json:"SizeInGB,omitempty"`
+	SizeInGB Value `json:"SizeInGB,omitempty"`
 
 	// VolumeType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumespecification-volumetype
-	VolumeType *StringIntrinsic `json:"VolumeType,omitempty"`
+	VolumeType Value `json:"VolumeType,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

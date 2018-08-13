@@ -18,7 +18,7 @@ type AWSSNSTopicPolicy struct {
 	// Topics AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sns-policy.html#cfn-sns-topicpolicy-topics
-	Topics []*StringIntrinsic `json:"Topics,omitempty"`
+	Topics []Value `json:"Topics,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

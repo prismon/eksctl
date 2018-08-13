@@ -13,12 +13,12 @@ type AWSEC2EIP struct {
 	// Domain AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-domain
-	Domain *StringIntrinsic `json:"Domain,omitempty"`
+	Domain Value `json:"Domain,omitempty"`
 
 	// InstanceId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-eip.html#cfn-ec2-eip-instanceid
-	InstanceId *StringIntrinsic `json:"InstanceId,omitempty"`
+	InstanceId Value `json:"InstanceId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

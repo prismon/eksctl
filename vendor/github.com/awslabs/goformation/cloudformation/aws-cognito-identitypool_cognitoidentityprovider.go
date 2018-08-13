@@ -7,17 +7,17 @@ type AWSCognitoIdentityPool_CognitoIdentityProvider struct {
 	// ClientId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-clientid
-	ClientId *StringIntrinsic `json:"ClientId,omitempty"`
+	ClientId Value `json:"ClientId,omitempty"`
 
 	// ProviderName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-providername
-	ProviderName *StringIntrinsic `json:"ProviderName,omitempty"`
+	ProviderName Value `json:"ProviderName,omitempty"`
 
 	// ServerSideTokenCheck AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-identitypool-cognitoidentityprovider.html#cfn-cognito-identitypool-cognitoidentityprovider-serversidetokencheck
-	ServerSideTokenCheck bool `json:"ServerSideTokenCheck,omitempty"`
+	ServerSideTokenCheck Value `json:"ServerSideTokenCheck,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -7,17 +7,17 @@ type AWSOpsWorksApp_SslConfiguration struct {
 	// Certificate AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-certificate
-	Certificate *StringIntrinsic `json:"Certificate,omitempty"`
+	Certificate Value `json:"Certificate,omitempty"`
 
 	// Chain AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-chain
-	Chain *StringIntrinsic `json:"Chain,omitempty"`
+	Chain Value `json:"Chain,omitempty"`
 
 	// PrivateKey AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-opsworks-app-sslconfiguration.html#cfn-opsworks-app-sslconfig-privatekey
-	PrivateKey *StringIntrinsic `json:"PrivateKey,omitempty"`
+	PrivateKey Value `json:"PrivateKey,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

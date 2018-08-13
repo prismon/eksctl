@@ -13,17 +13,17 @@ type AWSElastiCacheSecurityGroupIngress struct {
 	// CacheSecurityGroupName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-cachesecuritygroupname
-	CacheSecurityGroupName *StringIntrinsic `json:"CacheSecurityGroupName,omitempty"`
+	CacheSecurityGroupName Value `json:"CacheSecurityGroupName,omitempty"`
 
 	// EC2SecurityGroupName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupname
-	EC2SecurityGroupName *StringIntrinsic `json:"EC2SecurityGroupName,omitempty"`
+	EC2SecurityGroupName Value `json:"EC2SecurityGroupName,omitempty"`
 
 	// EC2SecurityGroupOwnerId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-elasticache-security-group-ingress.html#cfn-elasticache-securitygroupingress-ec2securitygroupownerid
-	EC2SecurityGroupOwnerId *StringIntrinsic `json:"EC2SecurityGroupOwnerId,omitempty"`
+	EC2SecurityGroupOwnerId Value `json:"EC2SecurityGroupOwnerId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,12 +13,12 @@ type AWSLogsMetricFilter struct {
 	// FilterPattern AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-filterpattern
-	FilterPattern *StringIntrinsic `json:"FilterPattern,omitempty"`
+	FilterPattern Value `json:"FilterPattern,omitempty"`
 
 	// LogGroupName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-logs-metricfilter.html#cfn-cwl-metricfilter-loggroupname
-	LogGroupName *StringIntrinsic `json:"LogGroupName,omitempty"`
+	LogGroupName Value `json:"LogGroupName,omitempty"`
 
 	// MetricTransformations AWS CloudFormation Property
 	// Required: true

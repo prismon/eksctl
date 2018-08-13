@@ -13,12 +13,12 @@ type AWSRDSOptionGroup struct {
 	// EngineName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-enginename
-	EngineName *StringIntrinsic `json:"EngineName,omitempty"`
+	EngineName Value `json:"EngineName,omitempty"`
 
 	// MajorEngineVersion AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-majorengineversion
-	MajorEngineVersion *StringIntrinsic `json:"MajorEngineVersion,omitempty"`
+	MajorEngineVersion Value `json:"MajorEngineVersion,omitempty"`
 
 	// OptionConfigurations AWS CloudFormation Property
 	// Required: true
@@ -28,7 +28,7 @@ type AWSRDSOptionGroup struct {
 	// OptionGroupDescription AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-rds-optiongroup.html#cfn-rds-optiongroup-optiongroupdescription
-	OptionGroupDescription *StringIntrinsic `json:"OptionGroupDescription,omitempty"`
+	OptionGroupDescription Value `json:"OptionGroupDescription,omitempty"`
 
 	// Tags AWS CloudFormation Property
 	// Required: false

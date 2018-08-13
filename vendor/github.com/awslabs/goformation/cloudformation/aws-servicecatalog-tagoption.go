@@ -13,17 +13,17 @@ type AWSServiceCatalogTagOption struct {
 	// Active AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-active
-	Active bool `json:"Active,omitempty"`
+	Active Value `json:"Active,omitempty"`
 
 	// Key AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-key
-	Key *StringIntrinsic `json:"Key,omitempty"`
+	Key Value `json:"Key,omitempty"`
 
 	// Value AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalog-tagoption.html#cfn-servicecatalog-tagoption-value
-	Value *StringIntrinsic `json:"Value,omitempty"`
+	Value Value `json:"Value,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -7,27 +7,27 @@ type AWSEC2LaunchTemplate_Placement struct {
 	// Affinity AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-affinity
-	Affinity *StringIntrinsic `json:"Affinity,omitempty"`
+	Affinity Value `json:"Affinity,omitempty"`
 
 	// AvailabilityZone AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-availabilityzone
-	AvailabilityZone *StringIntrinsic `json:"AvailabilityZone,omitempty"`
+	AvailabilityZone Value `json:"AvailabilityZone,omitempty"`
 
 	// GroupName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-groupname
-	GroupName *StringIntrinsic `json:"GroupName,omitempty"`
+	GroupName Value `json:"GroupName,omitempty"`
 
 	// HostId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-hostid
-	HostId *StringIntrinsic `json:"HostId,omitempty"`
+	HostId Value `json:"HostId,omitempty"`
 
 	// Tenancy AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-launchtemplate-launchtemplatedata-placement.html#cfn-ec2-launchtemplate-launchtemplatedata-placement-tenancy
-	Tenancy *StringIntrinsic `json:"Tenancy,omitempty"`
+	Tenancy Value `json:"Tenancy,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

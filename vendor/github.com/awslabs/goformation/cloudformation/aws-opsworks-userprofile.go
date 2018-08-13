@@ -13,22 +13,22 @@ type AWSOpsWorksUserProfile struct {
 	// AllowSelfManagement AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-allowselfmanagement
-	AllowSelfManagement bool `json:"AllowSelfManagement,omitempty"`
+	AllowSelfManagement Value `json:"AllowSelfManagement,omitempty"`
 
 	// IamUserArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-iamuserarn
-	IamUserArn *StringIntrinsic `json:"IamUserArn,omitempty"`
+	IamUserArn Value `json:"IamUserArn,omitempty"`
 
 	// SshPublicKey AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshpublickey
-	SshPublicKey *StringIntrinsic `json:"SshPublicKey,omitempty"`
+	SshPublicKey Value `json:"SshPublicKey,omitempty"`
 
 	// SshUsername AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-opsworks-userprofile.html#cfn-opsworks-userprofile-sshusername
-	SshUsername *StringIntrinsic `json:"SshUsername,omitempty"`
+	SshUsername Value `json:"SshUsername,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

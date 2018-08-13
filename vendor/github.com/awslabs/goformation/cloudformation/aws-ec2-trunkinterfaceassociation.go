@@ -13,22 +13,22 @@ type AWSEC2TrunkInterfaceAssociation struct {
 	// BranchInterfaceId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-branchinterfaceid
-	BranchInterfaceId *StringIntrinsic `json:"BranchInterfaceId,omitempty"`
+	BranchInterfaceId Value `json:"BranchInterfaceId,omitempty"`
 
 	// GREKey AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-grekey
-	GREKey int `json:"GREKey,omitempty"`
+	GREKey Value `json:"GREKey,omitempty"`
 
 	// TrunkInterfaceId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-trunkinterfaceid
-	TrunkInterfaceId *StringIntrinsic `json:"TrunkInterfaceId,omitempty"`
+	TrunkInterfaceId Value `json:"TrunkInterfaceId,omitempty"`
 
 	// VLANId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-trunkinterfaceassociation.html#cfn-ec2-trunkinterfaceassociation-vlanid
-	VLANId int `json:"VLANId,omitempty"`
+	VLANId Value `json:"VLANId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,17 +13,17 @@ type AWSEC2Host struct {
 	// AutoPlacement AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-autoplacement
-	AutoPlacement *StringIntrinsic `json:"AutoPlacement,omitempty"`
+	AutoPlacement Value `json:"AutoPlacement,omitempty"`
 
 	// AvailabilityZone AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-availabilityzone
-	AvailabilityZone *StringIntrinsic `json:"AvailabilityZone,omitempty"`
+	AvailabilityZone Value `json:"AvailabilityZone,omitempty"`
 
 	// InstanceType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-host.html#cfn-ec2-host-instancetype
-	InstanceType *StringIntrinsic `json:"InstanceType,omitempty"`
+	InstanceType Value `json:"InstanceType,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

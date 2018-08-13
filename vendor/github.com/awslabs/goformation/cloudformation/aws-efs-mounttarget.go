@@ -13,22 +13,22 @@ type AWSEFSMountTarget struct {
 	// FileSystemId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-filesystemid
-	FileSystemId *StringIntrinsic `json:"FileSystemId,omitempty"`
+	FileSystemId Value `json:"FileSystemId,omitempty"`
 
 	// IpAddress AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-ipaddress
-	IpAddress *StringIntrinsic `json:"IpAddress,omitempty"`
+	IpAddress Value `json:"IpAddress,omitempty"`
 
 	// SecurityGroups AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-securitygroups
-	SecurityGroups []*StringIntrinsic `json:"SecurityGroups,omitempty"`
+	SecurityGroups []Value `json:"SecurityGroups,omitempty"`
 
 	// SubnetId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-efs-mounttarget.html#cfn-efs-mounttarget-subnetid
-	SubnetId *StringIntrinsic `json:"SubnetId,omitempty"`
+	SubnetId Value `json:"SubnetId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

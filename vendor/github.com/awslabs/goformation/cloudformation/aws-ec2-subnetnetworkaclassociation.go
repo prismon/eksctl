@@ -13,12 +13,12 @@ type AWSEC2SubnetNetworkAclAssociation struct {
 	// NetworkAclId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-networkaclid
-	NetworkAclId *StringIntrinsic `json:"NetworkAclId,omitempty"`
+	NetworkAclId Value `json:"NetworkAclId,omitempty"`
 
 	// SubnetId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-subnet-network-acl-assoc.html#cfn-ec2-subnetnetworkaclassociation-associationid
-	SubnetId *StringIntrinsic `json:"SubnetId,omitempty"`
+	SubnetId Value `json:"SubnetId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

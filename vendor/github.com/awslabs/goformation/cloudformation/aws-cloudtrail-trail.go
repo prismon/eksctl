@@ -13,17 +13,17 @@ type AWSCloudTrailTrail struct {
 	// CloudWatchLogsLogGroupArn AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsloggrouparn
-	CloudWatchLogsLogGroupArn *StringIntrinsic `json:"CloudWatchLogsLogGroupArn,omitempty"`
+	CloudWatchLogsLogGroupArn Value `json:"CloudWatchLogsLogGroupArn,omitempty"`
 
 	// CloudWatchLogsRoleArn AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-cloudwatchlogsrolearn
-	CloudWatchLogsRoleArn *StringIntrinsic `json:"CloudWatchLogsRoleArn,omitempty"`
+	CloudWatchLogsRoleArn Value `json:"CloudWatchLogsRoleArn,omitempty"`
 
 	// EnableLogFileValidation AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-enablelogfilevalidation
-	EnableLogFileValidation bool `json:"EnableLogFileValidation,omitempty"`
+	EnableLogFileValidation Value `json:"EnableLogFileValidation,omitempty"`
 
 	// EventSelectors AWS CloudFormation Property
 	// Required: false
@@ -33,37 +33,37 @@ type AWSCloudTrailTrail struct {
 	// IncludeGlobalServiceEvents AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-includeglobalserviceevents
-	IncludeGlobalServiceEvents bool `json:"IncludeGlobalServiceEvents,omitempty"`
+	IncludeGlobalServiceEvents Value `json:"IncludeGlobalServiceEvents,omitempty"`
 
 	// IsLogging AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-islogging
-	IsLogging bool `json:"IsLogging,omitempty"`
+	IsLogging Value `json:"IsLogging,omitempty"`
 
 	// IsMultiRegionTrail AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-ismultiregiontrail
-	IsMultiRegionTrail bool `json:"IsMultiRegionTrail,omitempty"`
+	IsMultiRegionTrail Value `json:"IsMultiRegionTrail,omitempty"`
 
 	// KMSKeyId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-kmskeyid
-	KMSKeyId *StringIntrinsic `json:"KMSKeyId,omitempty"`
+	KMSKeyId Value `json:"KMSKeyId,omitempty"`
 
 	// S3BucketName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3bucketname
-	S3BucketName *StringIntrinsic `json:"S3BucketName,omitempty"`
+	S3BucketName Value `json:"S3BucketName,omitempty"`
 
 	// S3KeyPrefix AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-s3keyprefix
-	S3KeyPrefix *StringIntrinsic `json:"S3KeyPrefix,omitempty"`
+	S3KeyPrefix Value `json:"S3KeyPrefix,omitempty"`
 
 	// SnsTopicName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-snstopicname
-	SnsTopicName *StringIntrinsic `json:"SnsTopicName,omitempty"`
+	SnsTopicName Value `json:"SnsTopicName,omitempty"`
 
 	// Tags AWS CloudFormation Property
 	// Required: false
@@ -73,7 +73,7 @@ type AWSCloudTrailTrail struct {
 	// TrailName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cloudtrail-trail.html#cfn-cloudtrail-trail-trailname
-	TrailName *StringIntrinsic `json:"TrailName,omitempty"`
+	TrailName Value `json:"TrailName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

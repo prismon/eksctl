@@ -7,7 +7,7 @@ type AWSCodeBuildProject_ProjectTriggers struct {
 	// Webhook AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-projecttriggers.html#cfn-codebuild-project-projecttriggers-webhook
-	Webhook bool `json:"Webhook,omitempty"`
+	Webhook Value `json:"Webhook,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

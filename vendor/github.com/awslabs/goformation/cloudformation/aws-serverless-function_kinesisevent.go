@@ -7,17 +7,17 @@ type AWSServerlessFunction_KinesisEvent struct {
 	// BatchSize AWS CloudFormation Property
 	// Required: false
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#kinesis
-	BatchSize int `json:"BatchSize,omitempty"`
+	BatchSize Value `json:"BatchSize,omitempty"`
 
 	// StartingPosition AWS CloudFormation Property
 	// Required: true
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#kinesis
-	StartingPosition *StringIntrinsic `json:"StartingPosition,omitempty"`
+	StartingPosition Value `json:"StartingPosition,omitempty"`
 
 	// Stream AWS CloudFormation Property
 	// Required: true
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#kinesis
-	Stream *StringIntrinsic `json:"Stream,omitempty"`
+	Stream Value `json:"Stream,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

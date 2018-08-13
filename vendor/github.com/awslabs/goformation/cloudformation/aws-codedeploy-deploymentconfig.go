@@ -13,7 +13,7 @@ type AWSCodeDeployDeploymentConfig struct {
 	// DeploymentConfigName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codedeploy-deploymentconfig.html#cfn-codedeploy-deploymentconfig-deploymentconfigname
-	DeploymentConfigName *StringIntrinsic `json:"DeploymentConfigName,omitempty"`
+	DeploymentConfigName Value `json:"DeploymentConfigName,omitempty"`
 
 	// MinimumHealthyHosts AWS CloudFormation Property
 	// Required: false

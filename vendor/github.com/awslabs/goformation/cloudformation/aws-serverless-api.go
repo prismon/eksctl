@@ -13,12 +13,12 @@ type AWSServerlessApi struct {
 	// CacheClusterEnabled AWS CloudFormation Property
 	// Required: false
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
-	CacheClusterEnabled bool `json:"CacheClusterEnabled,omitempty"`
+	CacheClusterEnabled Value `json:"CacheClusterEnabled,omitempty"`
 
 	// CacheClusterSize AWS CloudFormation Property
 	// Required: false
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
-	CacheClusterSize *StringIntrinsic `json:"CacheClusterSize,omitempty"`
+	CacheClusterSize Value `json:"CacheClusterSize,omitempty"`
 
 	// DefinitionBody AWS CloudFormation Property
 	// Required: false
@@ -33,17 +33,17 @@ type AWSServerlessApi struct {
 	// Name AWS CloudFormation Property
 	// Required: false
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// StageName AWS CloudFormation Property
 	// Required: true
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
-	StageName *StringIntrinsic `json:"StageName,omitempty"`
+	StageName Value `json:"StageName,omitempty"`
 
 	// Variables AWS CloudFormation Property
 	// Required: false
 	// See: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessapi
-	Variables map[string]*StringIntrinsic `json:"Variables,omitempty"`
+	Variables map[string]Value `json:"Variables,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

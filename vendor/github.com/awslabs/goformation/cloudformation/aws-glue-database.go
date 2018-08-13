@@ -13,7 +13,7 @@ type AWSGlueDatabase struct {
 	// CatalogId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-database.html#cfn-glue-database-catalogid
-	CatalogId *StringIntrinsic `json:"CatalogId,omitempty"`
+	CatalogId Value `json:"CatalogId,omitempty"`
 
 	// DatabaseInput AWS CloudFormation Property
 	// Required: true

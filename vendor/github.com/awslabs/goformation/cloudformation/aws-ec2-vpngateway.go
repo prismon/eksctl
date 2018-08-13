@@ -13,7 +13,7 @@ type AWSEC2VPNGateway struct {
 	// AmazonSideAsn AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html#cfn-ec2-vpngateway-amazonsideasn
-	AmazonSideAsn int64 `json:"AmazonSideAsn,omitempty"`
+	AmazonSideAsn Value `json:"AmazonSideAsn,omitempty"`
 
 	// Tags AWS CloudFormation Property
 	// Required: false
@@ -23,7 +23,7 @@ type AWSEC2VPNGateway struct {
 	// Type AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpn-gateway.html#cfn-ec2-vpngateway-type
-	Type *StringIntrinsic `json:"Type,omitempty"`
+	Type Value `json:"Type,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,22 +13,22 @@ type AWSInspectorAssessmentTemplate struct {
 	// AssessmentTargetArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttargetarn
-	AssessmentTargetArn *StringIntrinsic `json:"AssessmentTargetArn,omitempty"`
+	AssessmentTargetArn Value `json:"AssessmentTargetArn,omitempty"`
 
 	// AssessmentTemplateName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-assessmenttemplatename
-	AssessmentTemplateName *StringIntrinsic `json:"AssessmentTemplateName,omitempty"`
+	AssessmentTemplateName Value `json:"AssessmentTemplateName,omitempty"`
 
 	// DurationInSeconds AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-durationinseconds
-	DurationInSeconds int `json:"DurationInSeconds,omitempty"`
+	DurationInSeconds Value `json:"DurationInSeconds,omitempty"`
 
 	// RulesPackageArns AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-inspector-assessmenttemplate.html#cfn-inspector-assessmenttemplate-rulespackagearns
-	RulesPackageArns []*StringIntrinsic `json:"RulesPackageArns,omitempty"`
+	RulesPackageArns []Value `json:"RulesPackageArns,omitempty"`
 
 	// UserAttributesForFindings AWS CloudFormation Property
 	// Required: false

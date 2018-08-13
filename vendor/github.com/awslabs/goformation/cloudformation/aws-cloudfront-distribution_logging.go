@@ -7,17 +7,17 @@ type AWSCloudFrontDistribution_Logging struct {
 	// Bucket AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-logging.html#cfn-cloudfront-distribution-logging-bucket
-	Bucket *StringIntrinsic `json:"Bucket,omitempty"`
+	Bucket Value `json:"Bucket,omitempty"`
 
 	// IncludeCookies AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-logging.html#cfn-cloudfront-distribution-logging-includecookies
-	IncludeCookies bool `json:"IncludeCookies,omitempty"`
+	IncludeCookies Value `json:"IncludeCookies,omitempty"`
 
 	// Prefix AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cloudfront-distribution-logging.html#cfn-cloudfront-distribution-logging-prefix
-	Prefix *StringIntrinsic `json:"Prefix,omitempty"`
+	Prefix Value `json:"Prefix,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

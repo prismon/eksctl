@@ -13,17 +13,17 @@ type AWSEC2VPCGatewayAttachment struct {
 	// InternetGatewayId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-internetgatewayid
-	InternetGatewayId *StringIntrinsic `json:"InternetGatewayId,omitempty"`
+	InternetGatewayId Value `json:"InternetGatewayId,omitempty"`
 
 	// VpcId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpcid
-	VpcId *StringIntrinsic `json:"VpcId,omitempty"`
+	VpcId Value `json:"VpcId,omitempty"`
 
 	// VpnGatewayId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc-gateway-attachment.html#cfn-ec2-vpcgatewayattachment-vpngatewayid
-	VpnGatewayId *StringIntrinsic `json:"VpnGatewayId,omitempty"`
+	VpnGatewayId Value `json:"VpnGatewayId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

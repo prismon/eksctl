@@ -18,7 +18,7 @@ type AWSEC2NetworkAcl struct {
 	// VpcId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-network-acl.html#cfn-ec2-networkacl-vpcid
-	VpcId *StringIntrinsic `json:"VpcId,omitempty"`
+	VpcId Value `json:"VpcId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

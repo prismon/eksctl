@@ -13,22 +13,22 @@ type AWSEC2VPC struct {
 	// CidrBlock AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-cidrblock
-	CidrBlock *StringIntrinsic `json:"CidrBlock,omitempty"`
+	CidrBlock Value `json:"CidrBlock,omitempty"`
 
 	// EnableDnsHostnames AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsHostnames
-	EnableDnsHostnames bool `json:"EnableDnsHostnames,omitempty"`
+	EnableDnsHostnames Value `json:"EnableDnsHostnames,omitempty"`
 
 	// EnableDnsSupport AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-EnableDnsSupport
-	EnableDnsSupport bool `json:"EnableDnsSupport,omitempty"`
+	EnableDnsSupport Value `json:"EnableDnsSupport,omitempty"`
 
 	// InstanceTenancy AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpc.html#cfn-aws-ec2-vpc-instancetenancy
-	InstanceTenancy *StringIntrinsic `json:"InstanceTenancy,omitempty"`
+	InstanceTenancy Value `json:"InstanceTenancy,omitempty"`
 
 	// Tags AWS CloudFormation Property
 	// Required: false

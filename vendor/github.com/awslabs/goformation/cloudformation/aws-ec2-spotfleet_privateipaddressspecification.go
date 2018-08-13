@@ -7,12 +7,12 @@ type AWSEC2SpotFleet_PrivateIpAddressSpecification struct {
 	// Primary AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-primary
-	Primary bool `json:"Primary,omitempty"`
+	Primary Value `json:"Primary,omitempty"`
 
 	// PrivateIpAddress AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-spotfleet-spotfleetrequestconfigdata-launchspecifications-networkinterfaces-privateipaddresses.html#cfn-ec2-spotfleet-privateipaddressspecification-privateipaddress
-	PrivateIpAddress *StringIntrinsic `json:"PrivateIpAddress,omitempty"`
+	PrivateIpAddress Value `json:"PrivateIpAddress,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

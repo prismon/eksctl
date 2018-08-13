@@ -13,22 +13,22 @@ type AWSRedshiftClusterSecurityGroupIngress struct {
 	// CIDRIP AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-cidrip
-	CIDRIP *StringIntrinsic `json:"CIDRIP,omitempty"`
+	CIDRIP Value `json:"CIDRIP,omitempty"`
 
 	// ClusterSecurityGroupName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-clustersecuritygroupname
-	ClusterSecurityGroupName *StringIntrinsic `json:"ClusterSecurityGroupName,omitempty"`
+	ClusterSecurityGroupName Value `json:"ClusterSecurityGroupName,omitempty"`
 
 	// EC2SecurityGroupName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-ec2securitygroupname
-	EC2SecurityGroupName *StringIntrinsic `json:"EC2SecurityGroupName,omitempty"`
+	EC2SecurityGroupName Value `json:"EC2SecurityGroupName,omitempty"`
 
 	// EC2SecurityGroupOwnerId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-redshift-clustersecuritygroupingress.html#cfn-redshift-clustersecuritygroupingress-ec2securitygroupownerid
-	EC2SecurityGroupOwnerId *StringIntrinsic `json:"EC2SecurityGroupOwnerId,omitempty"`
+	EC2SecurityGroupOwnerId Value `json:"EC2SecurityGroupOwnerId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

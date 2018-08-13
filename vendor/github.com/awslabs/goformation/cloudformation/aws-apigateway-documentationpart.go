@@ -18,12 +18,12 @@ type AWSApiGatewayDocumentationPart struct {
 	// Properties AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-properties
-	Properties *StringIntrinsic `json:"Properties,omitempty"`
+	Properties Value `json:"Properties,omitempty"`
 
 	// RestApiId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-documentationpart.html#cfn-apigateway-documentationpart-restapiid
-	RestApiId *StringIntrinsic `json:"RestApiId,omitempty"`
+	RestApiId Value `json:"RestApiId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

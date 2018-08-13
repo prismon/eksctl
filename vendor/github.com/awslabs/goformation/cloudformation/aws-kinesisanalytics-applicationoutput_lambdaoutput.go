@@ -7,12 +7,12 @@ type AWSKinesisAnalyticsApplicationOutput_LambdaOutput struct {
 	// ResourceARN AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-lambdaoutput.html#cfn-kinesisanalytics-applicationoutput-lambdaoutput-resourcearn
-	ResourceARN *StringIntrinsic `json:"ResourceARN,omitempty"`
+	ResourceARN Value `json:"ResourceARN,omitempty"`
 
 	// RoleARN AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-kinesisanalytics-applicationoutput-lambdaoutput.html#cfn-kinesisanalytics-applicationoutput-lambdaoutput-rolearn
-	RoleARN *StringIntrinsic `json:"RoleARN,omitempty"`
+	RoleARN Value `json:"RoleARN,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

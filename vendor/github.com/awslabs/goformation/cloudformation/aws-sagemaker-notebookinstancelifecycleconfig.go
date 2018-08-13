@@ -13,7 +13,7 @@ type AWSSageMakerNotebookInstanceLifecycleConfig struct {
 	// NotebookInstanceLifecycleConfigName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-sagemaker-notebookinstancelifecycleconfig.html#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecycleconfigname
-	NotebookInstanceLifecycleConfigName *StringIntrinsic `json:"NotebookInstanceLifecycleConfigName,omitempty"`
+	NotebookInstanceLifecycleConfigName Value `json:"NotebookInstanceLifecycleConfigName,omitempty"`
 
 	// OnCreate AWS CloudFormation Property
 	// Required: false

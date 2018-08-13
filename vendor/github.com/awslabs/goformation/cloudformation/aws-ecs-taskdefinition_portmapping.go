@@ -7,17 +7,17 @@ type AWSECSTaskDefinition_PortMapping struct {
 	// ContainerPort AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-containerport
-	ContainerPort int `json:"ContainerPort,omitempty"`
+	ContainerPort Value `json:"ContainerPort,omitempty"`
 
 	// HostPort AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-readonly
-	HostPort int `json:"HostPort,omitempty"`
+	HostPort Value `json:"HostPort,omitempty"`
 
 	// Protocol AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ecs-taskdefinition-containerdefinitions-portmappings.html#cfn-ecs-taskdefinition-containerdefinition-portmappings-sourcevolume
-	Protocol *StringIntrinsic `json:"Protocol,omitempty"`
+	Protocol Value `json:"Protocol,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -18,7 +18,7 @@ type AWSECRRepository struct {
 	// RepositoryName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecr-repository.html#cfn-ecr-repository-repositoryname
-	RepositoryName *StringIntrinsic `json:"RepositoryName,omitempty"`
+	RepositoryName Value `json:"RepositoryName,omitempty"`
 
 	// RepositoryPolicyText AWS CloudFormation Property
 	// Required: false

@@ -13,12 +13,12 @@ type AWSIAMUserToGroupAddition struct {
 	// GroupName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-groupname
-	GroupName *StringIntrinsic `json:"GroupName,omitempty"`
+	GroupName Value `json:"GroupName,omitempty"`
 
 	// Users AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-addusertogroup.html#cfn-iam-addusertogroup-users
-	Users []*StringIntrinsic `json:"Users,omitempty"`
+	Users []Value `json:"Users,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -23,12 +23,12 @@ type AWSElasticLoadBalancingV2ListenerRule struct {
 	// ListenerArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-listenerarn
-	ListenerArn *StringIntrinsic `json:"ListenerArn,omitempty"`
+	ListenerArn Value `json:"ListenerArn,omitempty"`
 
 	// Priority AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticloadbalancingv2-listenerrule.html#cfn-elasticloadbalancingv2-listenerrule-priority
-	Priority int `json:"Priority,omitempty"`
+	Priority Value `json:"Priority,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

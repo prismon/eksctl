@@ -7,17 +7,17 @@ type AWSCodeBuildProject_VpcConfig struct {
 	// SecurityGroupIds AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html#cfn-codebuild-project-vpcconfig-securitygroupids
-	SecurityGroupIds []*StringIntrinsic `json:"SecurityGroupIds,omitempty"`
+	SecurityGroupIds []Value `json:"SecurityGroupIds,omitempty"`
 
 	// Subnets AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html#cfn-codebuild-project-vpcconfig-subnets
-	Subnets []*StringIntrinsic `json:"Subnets,omitempty"`
+	Subnets []Value `json:"Subnets,omitempty"`
 
 	// VpcId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codebuild-project-vpcconfig.html#cfn-codebuild-project-vpcconfig-vpcid
-	VpcId *StringIntrinsic `json:"VpcId,omitempty"`
+	VpcId Value `json:"VpcId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

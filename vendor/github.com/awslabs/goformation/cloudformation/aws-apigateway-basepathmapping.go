@@ -13,22 +13,22 @@ type AWSApiGatewayBasePathMapping struct {
 	// BasePath AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-basepath
-	BasePath *StringIntrinsic `json:"BasePath,omitempty"`
+	BasePath Value `json:"BasePath,omitempty"`
 
 	// DomainName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-domainname
-	DomainName *StringIntrinsic `json:"DomainName,omitempty"`
+	DomainName Value `json:"DomainName,omitempty"`
 
 	// RestApiId AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-restapiid
-	RestApiId *StringIntrinsic `json:"RestApiId,omitempty"`
+	RestApiId Value `json:"RestApiId,omitempty"`
 
 	// Stage AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-basepathmapping.html#cfn-apigateway-basepathmapping-stage
-	Stage *StringIntrinsic `json:"Stage,omitempty"`
+	Stage Value `json:"Stage,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

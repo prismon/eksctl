@@ -7,12 +7,12 @@ type AWSDynamoDBTable_TimeToLiveSpecification struct {
 	// AttributeName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-attributename
-	AttributeName *StringIntrinsic `json:"AttributeName,omitempty"`
+	AttributeName Value `json:"AttributeName,omitempty"`
 
 	// Enabled AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-dynamodb-timetolivespecification.html#cfn-dynamodb-timetolivespecification-enabled
-	Enabled bool `json:"Enabled,omitempty"`
+	Enabled Value `json:"Enabled,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

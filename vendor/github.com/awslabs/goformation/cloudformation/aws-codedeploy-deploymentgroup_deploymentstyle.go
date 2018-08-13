@@ -7,12 +7,12 @@ type AWSCodeDeployDeploymentGroup_DeploymentStyle struct {
 	// DeploymentOption AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymentoption
-	DeploymentOption *StringIntrinsic `json:"DeploymentOption,omitempty"`
+	DeploymentOption Value `json:"DeploymentOption,omitempty"`
 
 	// DeploymentType AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-codedeploy-deploymentgroup-deploymentstyle.html#cfn-codedeploy-deploymentgroup-deploymentstyle-deploymenttype
-	DeploymentType *StringIntrinsic `json:"DeploymentType,omitempty"`
+	DeploymentType Value `json:"DeploymentType,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,17 +13,17 @@ type AWSIAMAccessKey struct {
 	// Serial AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-serial
-	Serial int `json:"Serial,omitempty"`
+	Serial Value `json:"Serial,omitempty"`
 
 	// Status AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-status
-	Status *StringIntrinsic `json:"Status,omitempty"`
+	Status Value `json:"Status,omitempty"`
 
 	// UserName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iam-accesskey.html#cfn-iam-accesskey-username
-	UserName *StringIntrinsic `json:"UserName,omitempty"`
+	UserName Value `json:"UserName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

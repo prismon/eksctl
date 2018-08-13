@@ -7,7 +7,7 @@ type AWSSageMakerNotebookInstanceLifecycleConfig_NotebookInstanceLifecycleHook s
 	// Content AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook.html#cfn-sagemaker-notebookinstancelifecycleconfig-notebookinstancelifecyclehook-content
-	Content *StringIntrinsic `json:"Content,omitempty"`
+	Content Value `json:"Content,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

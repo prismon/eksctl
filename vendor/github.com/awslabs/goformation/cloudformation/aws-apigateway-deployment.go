@@ -13,12 +13,12 @@ type AWSApiGatewayDeployment struct {
 	// Description AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-description
-	Description *StringIntrinsic `json:"Description,omitempty"`
+	Description Value `json:"Description,omitempty"`
 
 	// RestApiId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-restapiid
-	RestApiId *StringIntrinsic `json:"RestApiId,omitempty"`
+	RestApiId Value `json:"RestApiId,omitempty"`
 
 	// StageDescription AWS CloudFormation Property
 	// Required: false
@@ -28,7 +28,7 @@ type AWSApiGatewayDeployment struct {
 	// StageName AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-apigateway-deployment.html#cfn-apigateway-deployment-stagename
-	StageName *StringIntrinsic `json:"StageName,omitempty"`
+	StageName Value `json:"StageName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

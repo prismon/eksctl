@@ -7,7 +7,7 @@ type AWSWAFRegionalSizeConstraintSet_SizeConstraint struct {
 	// ComparisonOperator AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-comparisonoperator
-	ComparisonOperator *StringIntrinsic `json:"ComparisonOperator,omitempty"`
+	ComparisonOperator Value `json:"ComparisonOperator,omitempty"`
 
 	// FieldToMatch AWS CloudFormation Property
 	// Required: true
@@ -17,12 +17,12 @@ type AWSWAFRegionalSizeConstraintSet_SizeConstraint struct {
 	// Size AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-size
-	Size int `json:"Size,omitempty"`
+	Size Value `json:"Size,omitempty"`
 
 	// TextTransformation AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-wafregional-sizeconstraintset-sizeconstraint.html#cfn-wafregional-sizeconstraintset-sizeconstraint-texttransformation
-	TextTransformation *StringIntrinsic `json:"TextTransformation,omitempty"`
+	TextTransformation Value `json:"TextTransformation,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

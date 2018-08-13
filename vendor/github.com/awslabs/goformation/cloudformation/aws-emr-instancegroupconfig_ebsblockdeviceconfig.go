@@ -12,7 +12,7 @@ type AWSEMRInstanceGroupConfig_EbsBlockDeviceConfig struct {
 	// VolumesPerInstance AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-emr-ebsconfiguration-ebsblockdeviceconfig.html#cfn-emr-ebsconfiguration-ebsblockdeviceconfig-volumesperinstance
-	VolumesPerInstance int `json:"VolumesPerInstance,omitempty"`
+	VolumesPerInstance Value `json:"VolumesPerInstance,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,17 +13,17 @@ type AWSKinesisStream struct {
 	// Name AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// RetentionPeriodHours AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-retentionperiodhours
-	RetentionPeriodHours int `json:"RetentionPeriodHours,omitempty"`
+	RetentionPeriodHours Value `json:"RetentionPeriodHours,omitempty"`
 
 	// ShardCount AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-kinesis-stream.html#cfn-kinesis-stream-shardcount
-	ShardCount int `json:"ShardCount,omitempty"`
+	ShardCount Value `json:"ShardCount,omitempty"`
 
 	// StreamEncryption AWS CloudFormation Property
 	// Required: false

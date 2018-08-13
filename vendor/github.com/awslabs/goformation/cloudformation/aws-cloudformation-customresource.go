@@ -13,7 +13,7 @@ type AWSCloudFormationCustomResource struct {
 	// ServiceToken AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-cfn-customresource.html#cfn-customresource-servicetoken
-	ServiceToken *StringIntrinsic `json:"ServiceToken,omitempty"`
+	ServiceToken Value `json:"ServiceToken,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

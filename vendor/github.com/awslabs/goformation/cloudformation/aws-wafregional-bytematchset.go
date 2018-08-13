@@ -18,7 +18,7 @@ type AWSWAFRegionalByteMatchSet struct {
 	// Name AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-bytematchset.html#cfn-wafregional-bytematchset-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

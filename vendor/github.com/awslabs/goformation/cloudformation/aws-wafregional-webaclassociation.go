@@ -13,12 +13,12 @@ type AWSWAFRegionalWebACLAssociation struct {
 	// ResourceArn AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-resourcearn
-	ResourceArn *StringIntrinsic `json:"ResourceArn,omitempty"`
+	ResourceArn Value `json:"ResourceArn,omitempty"`
 
 	// WebACLId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafregional-webaclassociation.html#cfn-wafregional-webaclassociation-webaclid
-	WebACLId *StringIntrinsic `json:"WebACLId,omitempty"`
+	WebACLId Value `json:"WebACLId,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

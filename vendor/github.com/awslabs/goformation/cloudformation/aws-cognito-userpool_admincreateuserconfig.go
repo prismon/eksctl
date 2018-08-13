@@ -7,7 +7,7 @@ type AWSCognitoUserPool_AdminCreateUserConfig struct {
 	// AllowAdminCreateUserOnly AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-allowadmincreateuseronly
-	AllowAdminCreateUserOnly bool `json:"AllowAdminCreateUserOnly,omitempty"`
+	AllowAdminCreateUserOnly Value `json:"AllowAdminCreateUserOnly,omitempty"`
 
 	// InviteMessageTemplate AWS CloudFormation Property
 	// Required: false
@@ -17,7 +17,7 @@ type AWSCognitoUserPool_AdminCreateUserConfig struct {
 	// UnusedAccountValidityDays AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpool-admincreateuserconfig.html#cfn-cognito-userpool-admincreateuserconfig-unusedaccountvaliditydays
-	UnusedAccountValidityDays float64 `json:"UnusedAccountValidityDays,omitempty"`
+	UnusedAccountValidityDays Value `json:"UnusedAccountValidityDays,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,12 +13,12 @@ type AWSEMRInstanceFleetConfig struct {
 	// ClusterId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-clusterid
-	ClusterId *StringIntrinsic `json:"ClusterId,omitempty"`
+	ClusterId Value `json:"ClusterId,omitempty"`
 
 	// InstanceFleetType AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-instancefleettype
-	InstanceFleetType *StringIntrinsic `json:"InstanceFleetType,omitempty"`
+	InstanceFleetType Value `json:"InstanceFleetType,omitempty"`
 
 	// InstanceTypeConfigs AWS CloudFormation Property
 	// Required: false
@@ -33,17 +33,17 @@ type AWSEMRInstanceFleetConfig struct {
 	// Name AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// TargetOnDemandCapacity AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetondemandcapacity
-	TargetOnDemandCapacity int `json:"TargetOnDemandCapacity,omitempty"`
+	TargetOnDemandCapacity Value `json:"TargetOnDemandCapacity,omitempty"`
 
 	// TargetSpotCapacity AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-elasticmapreduce-instancefleetconfig.html#cfn-elasticmapreduce-instancefleetconfig-targetspotcapacity
-	TargetSpotCapacity int `json:"TargetSpotCapacity,omitempty"`
+	TargetSpotCapacity Value `json:"TargetSpotCapacity,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

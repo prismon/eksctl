@@ -7,12 +7,12 @@ type AWSRDSOptionGroup_OptionConfiguration struct {
 	// DBSecurityGroupMemberships AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-dbsecuritygroupmemberships
-	DBSecurityGroupMemberships []*StringIntrinsic `json:"DBSecurityGroupMemberships,omitempty"`
+	DBSecurityGroupMemberships []Value `json:"DBSecurityGroupMemberships,omitempty"`
 
 	// OptionName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-optionname
-	OptionName *StringIntrinsic `json:"OptionName,omitempty"`
+	OptionName Value `json:"OptionName,omitempty"`
 
 	// OptionSettings AWS CloudFormation Property
 	// Required: false
@@ -22,17 +22,17 @@ type AWSRDSOptionGroup_OptionConfiguration struct {
 	// OptionVersion AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfiguration-optionversion
-	OptionVersion *StringIntrinsic `json:"OptionVersion,omitempty"`
+	OptionVersion Value `json:"OptionVersion,omitempty"`
 
 	// Port AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-port
-	Port int `json:"Port,omitempty"`
+	Port Value `json:"Port,omitempty"`
 
 	// VpcSecurityGroupMemberships AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-rds-optiongroup-optionconfigurations.html#cfn-rds-optiongroup-optionconfigurations-vpcsecuritygroupmemberships
-	VpcSecurityGroupMemberships []*StringIntrinsic `json:"VpcSecurityGroupMemberships,omitempty"`
+	VpcSecurityGroupMemberships []Value `json:"VpcSecurityGroupMemberships,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

@@ -13,12 +13,12 @@ type AWSGluePartition struct {
 	// CatalogId AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-catalogid
-	CatalogId *StringIntrinsic `json:"CatalogId,omitempty"`
+	CatalogId Value `json:"CatalogId,omitempty"`
 
 	// DatabaseName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-databasename
-	DatabaseName *StringIntrinsic `json:"DatabaseName,omitempty"`
+	DatabaseName Value `json:"DatabaseName,omitempty"`
 
 	// PartitionInput AWS CloudFormation Property
 	// Required: true
@@ -28,7 +28,7 @@ type AWSGluePartition struct {
 	// TableName AWS CloudFormation Property
 	// Required: true
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-glue-partition.html#cfn-glue-partition-tablename
-	TableName *StringIntrinsic `json:"TableName,omitempty"`
+	TableName Value `json:"TableName,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type

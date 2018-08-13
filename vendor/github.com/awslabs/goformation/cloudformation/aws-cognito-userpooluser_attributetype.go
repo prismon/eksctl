@@ -7,12 +7,12 @@ type AWSCognitoUserPoolUser_AttributeType struct {
 	// Name AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpooluser-attributetype.html#cfn-cognito-userpooluser-attributetype-name
-	Name *StringIntrinsic `json:"Name,omitempty"`
+	Name Value `json:"Name,omitempty"`
 
 	// Value AWS CloudFormation Property
 	// Required: false
 	// See: http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-cognito-userpooluser-attributetype.html#cfn-cognito-userpooluser-attributetype-value
-	Value *StringIntrinsic `json:"Value,omitempty"`
+	Value Value `json:"Value,omitempty"`
 }
 
 // AWSCloudFormationType returns the AWS CloudFormation resource type
