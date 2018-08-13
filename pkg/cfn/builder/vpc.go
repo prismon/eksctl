@@ -15,9 +15,9 @@ const (
 
 func (c *clusterResourceSet) addResourcesForVPC(globalCIDR *net.IPNet, subnets map[string]*net.IPNet) {
 	refVPC := c.newResource("VPC", &gfn.AWSEC2VPC{
-		CidrBlock:          gfn.NewString(globalCIDR.String()),
-		EnableDnsSupport:   true,
-		EnableDnsHostnames: true,
+		CidrBlock:          gfn.String(globalCIDR.String()),
+		EnableDnsSupport:   gfn.True,
+		EnableDnsHostnames: gfn.True,
 	})
 
 	refIG := c.newResource("InternetGateway", &gfn.AWSEC2InternetGateway{})
@@ -32,15 +32,15 @@ func (c *clusterResourceSet) addResourcesForVPC(globalCIDR *net.IPNet, subnets m
 
 	c.newResource("PublicSubnetRoute", &gfn.AWSEC2Route{
 		RouteTableId:         refRT,
-		DestinationCidrBlock: gfn.NewString("0.0.0.0/0"),
+		DestinationCidrBlock: gfn.String("0.0.0.0/0"),
 		GatewayId:            refIG,
 	})
 
 	for az, subnet := range subnets {
 		alias := strings.ToUpper(strings.Join(strings.Split(az, "-"), ""))
 		refSubnet := c.newResource("Subnet"+alias, &gfn.AWSEC2Subnet{
-			AvailabilityZone: gfn.NewString(az),
-			CidrBlock:        gfn.NewString(subnet.String()),
+			AvailabilityZone: gfn.String(az),
+			CidrBlock:        gfn.String(subnet.String()),
 			VpcId:            refVPC,
 		})
 		c.newResource("RouteTableAssociation"+alias, &gfn.AWSEC2SubnetRouteTableAssociation{
@@ -51,10 +51,10 @@ func (c *clusterResourceSet) addResourcesForVPC(globalCIDR *net.IPNet, subnets m
 	}
 
 	refSG := c.newResource("ControlPlaneSecurityGroup", &gfn.AWSEC2SecurityGroup{
-		GroupDescription: gfn.NewString("Communication between the control plane and worker node groups"),
+		GroupDescription: gfn.String("Communication between the control plane and worker node groups"),
 		VpcId:            refVPC,
 	})
-	c.securityGroups = []*gfn.StringIntrinsic{refSG}
+	c.securityGroups = []gfn.Value{refSG}
 
 	c.rs.newOutput(cfnOutputClusterVPC, refVPC, true)
 	c.rs.newJoinedOutput(cfnOutputClusterSecurityGroup, c.securityGroups, true)
@@ -64,40 +64,41 @@ func (c *clusterResourceSet) addResourcesForVPC(globalCIDR *net.IPNet, subnets m
 func (n *nodeGroupResourceSet) addResourcesForSecurityGroups() {
 	desc := "worker nodes in group " + n.nodeGroupName
 
-	tcp := gfn.NewString("tcp")
-	anywhereIPv4 := gfn.NewString("0.0.0.0/0")
-	anywhereIPv6 := gfn.NewString("::/0")
+	tcp := gfn.String("tcp")
+	anywhereIPv4 := gfn.String("0.0.0.0/0")
+	anywhereIPv6 := gfn.String("::/0")
 	const (
-		apiPort = 443
-		sshPort = 22
+		apiPort = gfn.Integer(443)
+		sshPort = gfn.Integer(22)
 
-		nodeMinPort = 1025
-		nodeMaxPort = 65535
+		portZero    = gfn.Integer(0)
+		nodeMinPort = gfn.Integer(1025)
+		nodeMaxPort = gfn.Integer(65535)
 	)
 
 	refCP := makeImportValue(n.clusterStackName, cfnOutputClusterSecurityGroup)
 	refSG := n.newResource("SG", &gfn.AWSEC2SecurityGroup{
 		VpcId:            makeImportValue(n.clusterStackName, cfnOutputClusterVPC),
-		GroupDescription: gfn.NewString("Communication between the control plane and " + desc),
+		GroupDescription: gfn.String("Communication between the control plane and " + desc),
 		Tags: []gfn.Tag{{
-			Key:   gfn.NewString("kubernetes.io/cluster/" + n.spec.ClusterName),
-			Value: gfn.NewString("owned"),
+			Key:   gfn.String("kubernetes.io/cluster/" + n.spec.ClusterName),
+			Value: gfn.String("owned"),
 		}},
 	})
-	n.securityGroups = []*gfn.StringIntrinsic{refSG}
+	n.securityGroups = []gfn.Value{refSG}
 
 	n.newResource("IngressInterSG", &gfn.AWSEC2SecurityGroupIngress{
 		GroupId:               refSG,
 		SourceSecurityGroupId: refSG,
-		Description:           gfn.NewString("Allow " + desc + " to communicate with each other (all ports)"),
-		IpProtocol:            gfn.NewString("-1"),
-		FromPort:              0,
+		Description:           gfn.String("Allow " + desc + " to communicate with each other (all ports)"),
+		IpProtocol:            gfn.String("-1"),
+		FromPort:              portZero,
 		ToPort:                nodeMaxPort,
 	})
 	n.newResource("IngressInterCluster", &gfn.AWSEC2SecurityGroupIngress{
 		GroupId:               refSG,
 		SourceSecurityGroupId: refCP,
-		Description:           gfn.NewString("Allow " + desc + " to communicate with control plane (kubelet and workload TCP ports)"),
+		Description:           gfn.String("Allow " + desc + " to communicate with control plane (kubelet and workload TCP ports)"),
 		IpProtocol:            tcp,
 		FromPort:              nodeMinPort,
 		ToPort:                nodeMaxPort,
@@ -105,7 +106,7 @@ func (n *nodeGroupResourceSet) addResourcesForSecurityGroups() {
 	n.newResource("EgressInterCluster", &gfn.AWSEC2SecurityGroupEgress{
 		GroupId:                    refCP,
 		DestinationSecurityGroupId: refSG,
-		Description:                gfn.NewString("Allow " + desc + " to communicate with control plane (kubelet and workload TCP ports)"),
+		Description:                gfn.String("Allow " + desc + " to communicate with control plane (kubelet and workload TCP ports)"),
 		IpProtocol:                 tcp,
 		FromPort:                   nodeMinPort,
 		ToPort:                     nodeMaxPort,
@@ -113,7 +114,7 @@ func (n *nodeGroupResourceSet) addResourcesForSecurityGroups() {
 	n.newResource("IngressInterClusterCP", &gfn.AWSEC2SecurityGroupIngress{
 		GroupId:               refCP,
 		SourceSecurityGroupId: refSG,
-		Description:           gfn.NewString("Allow control plane to recieve API requests from " + desc),
+		Description:           gfn.String("Allow control plane to recieve API requests from " + desc),
 		IpProtocol:            tcp,
 		FromPort:              apiPort,
 		ToPort:                apiPort,
@@ -122,7 +123,7 @@ func (n *nodeGroupResourceSet) addResourcesForSecurityGroups() {
 		n.newResource("SSHIPv4", &gfn.AWSEC2SecurityGroupIngress{
 			GroupId:     refSG,
 			CidrIp:      anywhereIPv4,
-			Description: gfn.NewString("Allow SSH access to " + desc),
+			Description: gfn.String("Allow SSH access to " + desc),
 			IpProtocol:  tcp,
 			FromPort:    sshPort,
 			ToPort:      sshPort,
@@ -130,7 +131,7 @@ func (n *nodeGroupResourceSet) addResourcesForSecurityGroups() {
 		n.newResource("SSHIPv6", &gfn.AWSEC2SecurityGroupIngress{
 			GroupId:     refSG,
 			CidrIpv6:    anywhereIPv6,
-			Description: gfn.NewString("Allow SSH access to " + desc),
+			Description: gfn.String("Allow SSH access to " + desc),
 			IpProtocol:  tcp,
 			FromPort:    sshPort,
 			ToPort:      sshPort,

@@ -19,8 +19,8 @@ const (
 type clusterResourceSet struct {
 	rs             *resourceSet
 	spec           *api.ClusterConfig
-	subnets        []*gfn.StringIntrinsic
-	securityGroups []*gfn.StringIntrinsic
+	subnets        []gfn.Value
+	securityGroups []gfn.Value
 }
 
 func NewClusterResourceSet(spec *api.ClusterConfig) *clusterResourceSet {
@@ -46,7 +46,7 @@ func (c *clusterResourceSet) AddAllResources() error {
 	c.addResourcesForIAM()
 	c.addResourcesForControlPlane("1.10")
 
-	c.rs.newOutput(cfnOutputClusterStackName, refStackName, false)
+	c.rs.newOutput(cfnOutputClusterStackName, gfn.RefStackName, false)
 
 	return nil
 }
@@ -55,15 +55,15 @@ func (c *clusterResourceSet) RenderJSON() ([]byte, error) {
 	return c.rs.renderJSON()
 }
 
-func (c *clusterResourceSet) newResource(name string, resource interface{}) *gfn.StringIntrinsic {
+func (c *clusterResourceSet) newResource(name string, resource interface{}) gfn.Intrinsic {
 	return c.rs.newResource(name, resource)
 }
 
 func (c *clusterResourceSet) addResourcesForControlPlane(version string) {
 	c.newResource("ControlPlane", &gfn.AWSEKSCluster{
-		Name:    gfn.NewString(c.spec.ClusterName),
-		RoleArn: gfn.NewStringIntrinsic(fnGetAtt, "ServiceRole.Arn"),
-		Version: gfn.NewString(version),
+		Name:    gfn.String(c.spec.ClusterName),
+		RoleArn: gfn.MakeFnGetAtt("ServiceRole.Arn"),
+		Version: gfn.String(version),
 		ResourcesVpcConfig: &gfn.AWSEKSCluster_ResourcesVpcConfig{
 			SubnetIds:        c.subnets,
 			SecurityGroupIds: c.securityGroups,

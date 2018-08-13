@@ -27,10 +27,10 @@ type nodeGroupResourceSet struct {
 	spec             *api.ClusterConfig
 	clusterStackName string
 	nodeGroupName    string
-	instanceProfile  *gfn.StringIntrinsic
-	securityGroups   []*gfn.StringIntrinsic
-	vpc              *gfn.StringIntrinsic
-	userData         *gfn.StringIntrinsic
+	instanceProfile  gfn.Intrinsic
+	securityGroups   []gfn.Value
+	vpc              gfn.Value
+	userData         gfn.String
 	clusterOwnedTag  gfn.Tag
 }
 
@@ -61,7 +61,7 @@ func (n *nodeGroupResourceSet) AddAllResources() error {
 	if err != nil {
 		return err
 	}
-	n.userData = userData
+	n.userData = gfn.String(userData)
 
 	// TODO: https://github.com/weaveworks/eksctl/issues/28
 	// - imporve validation of parameter set overall, probably in another package
@@ -86,22 +86,22 @@ func (n *nodeGroupResourceSet) RenderJSON() ([]byte, error) {
 	return n.rs.renderJSON()
 }
 
-func (n *nodeGroupResourceSet) newResource(name string, resource interface{}) *gfn.StringIntrinsic {
+func (n *nodeGroupResourceSet) newResource(name string, resource interface{}) gfn.Intrinsic {
 	return n.rs.newResource(name, resource)
 }
 
 func (n *nodeGroupResourceSet) addResourcesForNodeGroup() {
 	lc := &gfn.AWSAutoScalingLaunchConfiguration{
-		AssociatePublicIpAddress: true,
+		AssociatePublicIpAddress: gfn.True,
 		IamInstanceProfile:       n.instanceProfile,
 		SecurityGroups:           n.securityGroups,
 
-		ImageId:      gfn.NewString(n.spec.NodeAMI),
-		InstanceType: gfn.NewString(n.spec.NodeType),
+		ImageId:      gfn.String(n.spec.NodeAMI),
+		InstanceType: gfn.String(n.spec.NodeType),
 		UserData:     n.userData,
 	}
 	if n.spec.NodeSSH {
-		lc.KeyName = gfn.NewString(n.spec.SSHPublicKeyName)
+		lc.KeyName = gfn.String(n.spec.SSHPublicKeyName)
 	}
 	refLC := n.newResource("NodeLaunchConfig", lc)
 	// currently goformation type system doesn't allow specifying `VPCZoneIdentifier: { "Fn::ImportValue": ... }`,
@@ -114,7 +114,7 @@ func (n *nodeGroupResourceSet) addResourcesForNodeGroup() {
 			"MinSize":                 fmt.Sprintf("%d", n.spec.MinNodes),
 			"MaxSize":                 fmt.Sprintf("%d", n.spec.MaxNodes),
 			"VPCZoneIdentifier": map[string][]interface{}{
-				fnSplit: []interface{}{
+				gfn.FnSplit: []interface{}{
 					",",
 					makeImportValue(n.clusterStackName, cfnOutputClusterSubnets),
 				},
