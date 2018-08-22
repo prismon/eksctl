@@ -78,5 +78,5 @@ required = [
   revision = "8183543f90d1aef267a5ecc209f2e0715b355acb"
 
 [[constraint]]
-  branch = "master"
+  revision = "a10ffd27701fbbfa83c85249a5388938f37dde54"
   name = "github.com/dlespiau/kube-test-harness"
